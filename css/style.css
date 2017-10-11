@@ -188,6 +188,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .header__logo img {
   height: 45px;
@@ -227,9 +228,9 @@ section {
   position: absolute;
   width: 320px;
   height: 310px;
-  top: 100px;
+  top: 74px;
   background: rgba(59,190,182,.95);
-  left: 730px;
+  left: 610px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
   opacity: 0;
   pointer-events: none;
