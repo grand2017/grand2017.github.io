@@ -631,7 +631,7 @@ section {
 }
 .special-popup .item {
   width: 640px;
-  height: 420px;
+  height: 440px;
   margin: 0;
 }
 .special-popup .item__member {
@@ -642,6 +642,53 @@ section {
   font-family: "Proxima";
   font-size: 24px;
 }
+.special-popup__top {
+  display: flex;
+  align-items: center;
+}
+.special-popup__bottom {
+  padding: 0 20px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.special-popup .input, .special .input-name {
+  width: 39%;
+  margin: 0;
+}
+.special-popup .btn {
+  width: 200px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 18px 0;
+  margin-left: 15px;
+  margin: 0;
+  background: #55C3BC;
+}
+.special-popup__gallery {
+  width: 380px;
+  margin-top: 50px;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.special-popup__img {
+  margin-right: 1%;
+  margin-bottom: 10px;
+  width: 24%;
+  font-size: 0;
+  order: 2;
+}
+.special-popup__img.active {
+  order: 1;
+  width: 100%;
+}
+.special-popup__img img {
+  width: 100%;
+  height: auto;
+}
+
 
 /* REG SECTION */
 
@@ -793,16 +840,23 @@ section {
   overflow-x: hidden;
 }
 .partners-carousel .item {
-  width: 12.5vw;
+  width: calc(8.33vw - 4px);
   float: left;
   margin: 2px;
   background: #fff;
-  padding: 10px 30px;
+  padding: 5px 15px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
 }
 .partners-carousel--members .item {
   width: 16.66vw;
 }
+
+@media (min-width: 1600px) {
+  .partners-carousel--members .item {
+    width: 12.5vw;
+  }
+}
+
 .partners-carousel .item img {
   width: 100%;
   height: auto;
@@ -1108,6 +1162,30 @@ section {
   top: -2px;
 }
 
+/* TICKET SECTION */
+
+.ticket {
+  height: 140px;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.30);
+}
+.ticket .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ticket h2 {
+  color: #67629F;
+  font-size: 36px;
+  width: 700px;
+  font-family: "Proxima";
+  text-transform: uppercase;
+}
+.ticket .btn {
+  width: 300px;
+  display: block;
+}
 
 /* FOOTER */
 
