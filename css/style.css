@@ -752,8 +752,8 @@ section {
 /* MEMBERS SECTION */
 
 .members {
-  height: 900px;
   background: linear-gradient(45deg, #2F7199 0%,#5F92B1 40%,#9ABACD 100%);
+  padding-bottom: 40px;
 }
 .members__caption {
   text-align: center;
