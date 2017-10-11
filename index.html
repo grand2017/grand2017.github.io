@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Выставка</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__logo">
+					<a href="/"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<input type="checkbox" id="location-check">
+				<label for="location-check" class="header__location">
+					МТК «ГРАНД», Ленинградское шоссе, 100 метров от МКАД, г. Химки, Бутаково 4
+				</label>
+				<div class="location-popup">
+					<a href="#">Показать на большой карте</a>
+					<img src="img/map.png" alt="map">
+					<p>Режим работы:</p>
+					<p>Ежедневно, c 10:00 до 21:00</p>
+				</div>
+				<div class="header__phone">
+					<span>+7 (495)</span> 780-33-33
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<nav class="main-nav">
+					<a class="main-nav__link" href="#">О выставке</a>
+					<a class="main-nav__link" href="#">Участники</a>
+					<a class="main-nav__link" href="#">Программа</a>
+					<a class="main-nav__link" href="#">Спецпредложения</a>
+					<a class="main-nav__link" href="#">Как добраться</a>
+					<a class="main-nav__link" href="#">Вход / регистрация</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="main">
+		<div class="container">
+			<div class="main__left">
+				<h1 class="exhibition"><span class="first-line">Выставка</span><span class="second-line">производителей</span><span class="third-line">мебели</span></h1>
+				<img src="img/date.png" alt="date">
+				<a class="btn">Получить приглашение</a>
+			</div>
+			<div class="main__right">
+				<div class="slider owl-carousel owl-theme">
+					<div class="item slider__slide">
+						<div class="slider__caption">Все категории мебели</div>
+					</div>
+					<div class="item slider__slide">
+						<div class="slider__caption">Заголовок слайда 2</div>
+					</div>
+					<div class="item slider__slide">
+						<div class="slider__caption">Заголовок слайда 3</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="section-caption">
+			<div class="container">
+				<h2>О выставке</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="about__left">
+				<video controls poster="img/video.png">
+  				<source src="video/kittens.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="about__right">
+				<div class="about-slider owl-carousel owl-theme">
+					<div class="about-slider__slide item">
+						<h3>Выставка-продажа</h3>
+						<h4>Грандиозное событие для покупателей!</h4>
+						<p>Мебельные бренды от 500 производителей из 30 стран мира по выгодным ценам.</p>
+						<ul>
+							<li>Все категории мебели</li>
+							<li>Все ценовые сегменты</li>
+							<li>Все направления в дизайне</li>
+							<li>Лучшие спецпредложения</li>
+						</ul>
+					</div>
+					<div class="about-slider__slide item">
+						<h3>Заголовок слайда 2</h3>
+						<h4>Грандиозное событие для покупателей!</h4>
+						<p>Мебельные бренды от 500 производителей из 30 стран мира по выгодным ценам.</p>
+						<ul>
+							<li>Все категории мебели</li>
+							<li>Все ценовые сегменты</li>
+							<li>Все направления в дизайне</li>
+							<li>Лучшие спецпредложения</li>
+						</ul>
+					</div>
+					<div class="about-slider__slide item">
+						<h3>Заголовок слайда 3</h3>
+						<h4>Грандиозное событие для покупателей!</h4>
+						<p>Мебельные бренды от 500 производителей из 30 стран мира по выгодным ценам.</p>
+						<ul>
+							<li>Все категории мебели</li>
+							<li>Все ценовые сегменты</li>
+							<li>Все направления в дизайне</li>
+							<li>Лучшие спецпредложения</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="subscription">
+				<div class="container">
+					<h2>Узнай о новостях выставки!</h2>
+					<form>
+						<span class="input">
+							<input class="input__field" type="text" id="input-email" placeholder="mail@example.com">
+							<label class="input__label" for="input-email">
+								<i class="fa fa-fw fa-envelope icon"></i>
+							</label>
+						</span>
+						<button class="btn">Хочу все знать!</button>
+					</form>
+				</div>
+		</div>
+	</section>
+	<section class="special">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Спецпредложения</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="special-carousel owl-carousel owl-theme">
+		    <div class="item">
+					<div class="item__img">
+						<img src="img/members/member2.png">
+					</div>
+					<div class="item__caption">
+						Скидка 40%
+					</div>
+					<div class="item__info">
+						Краткий текст, описывающий спецпредложение, в несколько строк. Далее при клике на кнопку, картинку или заголовок откроется новость полность…
+					</div>
+					<div class="item__btn">
+						Получить купон
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__img">
+						<img src="img/members/member1.png">
+					</div>
+					<div class="item__caption">
+						Скидка 15%
+					</div>
+					<div class="item__info">
+						Краткий текст, описывающий спецпредложение, в несколько строк. Далее при клике на кнопку, картинку или заголовок откроется новость полность…
+					</div>
+					<div class="item__btn">
+						Получить купон
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__img">
+						<img src="img/members/member3.png">
+					</div>
+					<div class="item__caption">
+						Рассрочка 12 мес
+					</div>
+					<div class="item__info">
+						Краткий текст, описывающий спецпредложение, в несколько строк. Далее при клике на кнопку, картинку или заголовок откроется новость полность…
+					</div>
+					<div class="item__btn">
+						Получить купон
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__img">
+						<img src="img/members/member3.png">
+					</div>
+					<div class="item__caption">
+						Скидка 40%
+					</div>
+					<div class="item__info">
+						Краткий текст, описывающий спецпредложение, в несколько строк. Далее при клике на кнопку, картинку или заголовок откроется новость полность…
+					</div>
+					<div class="item__btn">
+						Получить купон
+					</div>
+				</div>
+			</div>
+			<a class="btn">Все спецпредложения</a>
+		</div>
+		<div class="special-popaps">
+			<div class="special-popup">
+				<div class="inner">
+					<div class="popup-close"></div>
+					<div class="special-popup__top">
+						<div class="item">
+							<div class="item__member">
+								Спецпредложение компании ASKONA
+							</div>
+							<div class="item__caption">
+								Скидка 40%
+							</div>
+							<div class="item__info">
+								Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение,
+							</div>
+						</div>
+						<div class="special-popup__gallery">
+							<div class="special-popup__img active">
+								<img src="">
+							</div>
+							<div class="special-popup__img">
+								<img src="">
+							</div>
+							<div class="special-popup__img">
+								<img src="">
+							</div>
+							<div class="special-popup__img">
+								<img src="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="special-popup">
+				<div class="inner">
+					<div class="popup-close"></div>
+					<div class="special-popup__top">
+						<div class="item">
+							<div class="item__member">
+								Спецпредложение компании ASKONA
+							</div>
+							<div class="item__caption">
+								Скидка 40%
+							</div>
+							<div class="item__info">
+								Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение, Полный текст, описывающий спецпредложение,
+							</div>
+						</div>
+						<div class="special-popup__gallery">
+							<div class="special-popup__img active">
+								<img src="">
+							</div>
+							<div class="special-popup__img">
+								<img src="">
+							</div>
+							<div class="special-popup__img">
+								<img src="">
+							</div>
+							<div class="special-popup__img">
+								<img src="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reg">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Регистрация</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="reg-panel">
+				<form>
+					<div class="reg__top">
+						<div class="reg__left">
+							<h2>Хочу посетить</h2>
+							<input type="checkbox" class="reg-check" id="reg-check1" checked>
+							<label for="reg-check1">Выставку-продажу</label>
+							<input type="checkbox" class="reg-check" id="reg-check2">
+							<label for="reg-check2">Программу для дизайнера, архитектора</label>
+							<input type="checkbox" class="reg-check" id="reg-check3">
+							<label for="reg-check3">Программу для дилера, франчайзи</label>
+						</div>
+						<div class="reg__right">
+							<h2>Мои контакты</h2>
+							<span class="input" style="width: 55%; display: inline-block;">
+								<input class="input__field" type="text" id="reg-surname" placeholder="Иванов">
+								<label class="input__label" for="reg-surname">
+									<i class="fa fa-fw fa-user icon"></i>
+								</label>
+							</span><input class="input__field--name" type="text" id="reg-name" placeholder="Иван" style="width: 45%; display: inline-block;">
+							<span class="input">
+								<input class="input__field" type="text" id="reg-email" placeholder="mail@example.com">
+								<label class="input__label" for="reg-email">
+									<i class="fa fa-fw fa-envelope icon"></i>
+								</label>
+							</span>
+							<span class="input">
+								<input class="input__field" type="text" id="reg-phone" placeholder="+7 (123) 456-78-90">
+								<label class="input__label" for="reg-phone">
+									<i class="fa fa-fw fa-phone icon"></i>
+								</label>
+							</span>
+						</div>
+					</div>
+					<div class="reg__bottom">
+						<div class="reg__left">
+							<div class="social-login">
+								<h3>Вход через соцсети:</h3>
+								<a><img src="img/icons/vk.png" alt="vk"></a>
+								<a><img src="img/icons/twitter.png" alt="twitter"></a>
+								<a><img src="img/icons/ok.png" alt="ok"></a>
+								<a><img src="img/icons/facebook.png" alt="facebook"></a>
+							</div>
+						</div>
+						<div class="reg__right">
+							<button class="btn">Зарегистрироваться</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="members">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Участники</h2>
+			</div>
+		</div>
+			<div class="members__caption">
+				<h3>Организаторы и партнеры</h3>
+			</div>
+			<div class="org">
+				<div>
+					<img src="img/logo.png" alt="grand">
+					<h4>Организатор</h4>
+				</div>
+				<div>
+					<img src="img/askona.png" alt="askona">
+					<h4>Генеральный партнер</h4>
+				</div>
+			</div>
+			<div class="members__caption">
+				<h3>Инфопартнеры</h3>
+			</div>
+			<div class="partners-carousel">
+						<div class="item">
+							<div class="inner"><img src="img/members/member1.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member2.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member3.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member1.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member2.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member3.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member1.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member2.png"></div>
+						</div>
+						<div class="item">
+							<div class="inner"><img src="img/members/member3.png"></div>
+						</div>
+			</div>
+			<div class="members__caption">
+				<h3>Лидеры мебельного рынка</h3>
+			</div>
+			<div class="partners-carousel partners-carousel--members">
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member1.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member2.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member3.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member1.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member2.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member3.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member1.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member2.png"></div></a>
+						</div>
+						<div class="item">
+							<a href="#"><div class="inner"><img src="img/members/member3.png"></div></a>
+						</div>
+			</div>
+	</section>
+	<section class="schedule">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Программа выставки</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="themes-filters">
+				<div class="themes-filters__item active" data-theme="customer">Программа для покупателей</div>
+				<div class="themes-filters__item" data-theme="dealer">Для дилеров/франчайзи</div>
+				<div class="themes-filters__item" data-theme="designer">Для дизайнеров/архитекторов</div>
+			</div>
+			<div class="schedule-wrapper">
+				<div class="date-filters">
+					<div class="date-filters__item active" data-date="18">18.11</div>
+					<div class="date-filters__item" data-date="19">19.11</div>
+					<div class="date-filters__item" data-date="20">20.11</div>
+					<div class="date-filters__item" data-date="21">21.11</div>
+					<div class="date-filters__item" data-date="22">22.11</div>
+					<div class="date-filters__item" data-date="23">23.11</div>
+					<div class="date-filters__item" data-date="24">24.11</div>
+					<div class="date-filters__item" data-date="25">25.11</div>
+					<div class="date-filters__item" data-date="26">26.11</div>
+				</div>
+				<div class="events">
+					<div class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item" data-theme="dealer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы выставки</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item" data-theme="dealer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы выставки</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item active" data-theme="customer" data-date="19">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item" data-theme="dealer" data-date="19">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы выставки</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item active" data-theme="customer" data-date="19">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+					<div class="events__item" data-theme="dealer" data-date="19">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы выставки</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="speakers">
+				<h2>Спикеры</h2>
+				<div class="speakers-carousel owl-carousel owl-theme">
+					<div class="item speaker">
+						<div class="speaker__inner">
+							<div class="speaker__top">
+								<div class="speaker__img">
+									<img src="img/speakers/speaker1.png">
+								</div>
+								<div class="speaker__name">
+									Игорь<br>Манн
+								</div>
+							</div>
+							<div class="speaker__date">
+								21 октября, 17:15
+							</div>
+						</div>
+					</div>
+					<div class="item speaker">
+						<div class="speaker__inner">
+							<div class="speaker__top">
+								<div class="speaker__img">
+									<img src="img/speakers/speaker2.png">
+								</div>
+								<div class="speaker__name">
+									Алексей<br>Иванов
+								</div>
+							</div>
+							<div class="speaker__date">
+								21 октября, 15:00
+							</div>
+						</div>
+					</div>
+					<div class="item speaker">
+						<div class="speaker__inner">
+							<div class="speaker__top">
+								<div class="speaker__img">
+									<img src="img/speakers/speaker3.png">
+								</div>
+								<div class="speaker__name">
+									Институт<br>Адизеса
+								</div>
+							</div>
+							<div class="speaker__date">
+								21 октября, 12:00
+							</div>
+						</div>
+					</div>
+					<div class="item speaker">
+						<div class="speaker__inner">
+							<div class="speaker__top">
+								<div class="speaker__img">
+									<img src="img/speakers/speaker1.png">
+								</div>
+								<div class="speaker__name">
+									Игорь<br>Манн
+								</div>
+							</div>
+							<div class="speaker__date">
+								21 октября, 17:15
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Новости и пресса</h2>
+			</div>
+		</div>
+		<div class="news-carousel owl-carousel owl-theme">
+			<div class="item news-carousel__item">
+				<div class="inner">
+					<div class="news-carousel__img">
+						<img src="img/news/news1.png">
+					</div>
+						<h3>Заголовок новости в одну или две строки</h3>
+						<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач…</p>
+				</div>
+			</div>
+			<div class="item news-carousel__item">
+				<div class="inner">
+					<div class="news-carousel__img">
+						<img src="img/news/news1.png">
+					</div>
+						<h3>Заголовок новости в одну или две строки</h3>
+						<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач…</p>
+				</div>
+			</div>
+			<div class="item news-carousel__item">
+				<div class="inner">
+					<div class="news-carousel__img">
+						<img src="img/news/news1.png">
+					</div>
+						<h3>Заголовок новости в одну или две строки</h3>
+						<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач…</p>
+				</div>
+			</div>
+			<div class="item news-carousel__item">
+				<div class="inner">
+					<div class="news-carousel__img">
+						<img src="img/news/news1.png">
+					</div>
+						<h3>Заголовок новости в одну или две строки</h3>
+						<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач…</p>
+				</div>
+			</div>
+			<div class="item news-carousel__item">
+				<div class="inner">
+					<div class="news-carousel__img">
+						<img src="img/news/news1.png">
+					</div>
+						<h3>Заголовок новости в одну или две строки</h3>
+						<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач…</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Как добраться?</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="main__left">
+				<h2 class="exhibition"><span class="first-line">Выставка</span><span class="second-line">производителей</span><span class="third-line">мебели</span></h2>
+				<img src="img/date.png" alt="date">
+				<div class="contacts">
+					<div class="contact">МТК «ГРАНД», Ленинградское ш., 100 метров от МКАД (в сторону области), г. Химки, Бутаково 4</div>
+					<div class="contact contact--phone">+7 (495) 780-33-33</div>
+					<div class="contact contact--mail">info@grandfs.ru</div>
+				</div>
+			</div>
+			<div class="map__info">
+			</div>
+		</div>
+		<div id="map"></div>
+	</section>
+	<footer>
+		<div class="section-caption">
+			<div class="container">
+				<span class="age">0+</span><span>Все права защищены © МТК «ГРАНД»</span>
+			</div>
+		</div>
+	</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="js/marquee.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaDge1lBjsk-_KWvE3JoOZR17YjDO5vKo&signed_in=true&callback=initMap" async defer></script>
+<script>
+$('.slider').owlCarousel({
+	loop:true,
+	margin:10,
+	nav:true,
+	dots:false,
+	center: true,
+	autoplay:true,
+  autoplayTimeout:6000,
+	smartSpeed: 1000,
+	autoplayHoverPause:true,
+  items: 1
+});
+$('.about-slider').owlCarousel({
+	loop:true,
+	margin:10,
+	nav:false,
+	dots:true,
+	center: true,
+	autoplay:true,
+  autoplayTimeout:5000,
+	smartSpeed: 1000,
+	autoplayHoverPause:true,
+  items: 1
+});
+$('.special-carousel').owlCarousel({
+	loop:true,
+	margin:0,
+	nav:true,
+	dots:false,
+	center: true,
+	autoplay:true,
+  autoplayTimeout:3000,
+	autoplayHoverPause:true,
+  responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:3
+        }
+  }
+});
+$('.speakers-carousel').owlCarousel({
+	loop:true,
+	margin:0,
+	nav:true,
+	dots:false,
+  responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:3
+        }
+  }
+});
+$('.news-carousel').owlCarousel({
+	loop:true,
+	margin:0,
+	nav:false,
+	dots:true,
+	autoplay:true,
+  autoplayTimeout:3000,
+	autoplayHoverPause:true,
+  responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:4
+        }
+  }
+});
+$('.partners-carousel').marquee({
+  	duration: 20000,
+    gap: 0,
+    delayBeforeStart: 0,
+    direction: 'left',
+    duplicated: true,
+    setStartPosition: 100
+});
+$('.themes-filters__item').click(function(){
+	$('.themes-filters__item').removeClass('active');
+	$(this).addClass('active');
+	var theme = $(this).data('theme');
+	var date = $('.date-filters__item.active').data('date');
+	$('.events__item').removeClass('active');
+	$('[data-theme=' + theme + '][data-date=' + date + ']').addClass('active');
+});
+$('.date-filters__item').click(function(){
+	$('.date-filters__item').removeClass('active');
+	$(this).addClass('active');
+	var date= $(this).data('date');
+	var theme = $('.themes-filters__item.active').data('theme');
+	$('.events__item').removeClass('active');
+	$('[data-theme=' + theme + '][data-date=' + date + ']').addClass('active');
+});
+
+function initMap() {
+	var myLatLng = {lat: 55.886767, lng: 37.436494};
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 15,
+		center: myLatLng,
+		scrollwheel: false,
+		disableDefaultUI: true
+	});
+	var marker = new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		title: 'МТК "ГРАНД"',
+		icon: 'img/icons/marker.svg'
+	});
+}
+</script>
+</body>
+</html>
