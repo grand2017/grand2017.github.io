@@ -1,3 +1,5 @@
+
+
 $('.slider').owlCarousel({
     animateOut: 'fadeOutLeftBig',
     animateIn: 'fadeInRightBig',
@@ -24,7 +26,7 @@ $('.about-slider').owlCarousel({
   	autoplayHoverPause:true,
     items: 1
   });
-$('.special-carousel').owlCarousel({
+$('.special-carousel--home').owlCarousel({
 	loop:true,
 	margin:0,
 	nav:true,
@@ -39,6 +41,34 @@ $('.special-carousel').owlCarousel({
         },
         767:{
             items:3
+        }
+  }
+});
+if ($('.special-carousel--grid').length) {
+  var items = $('.special-carousel--grid > .item').length;
+  if (items >= 12) {
+    var pages = Math.ceil(items/4);
+    for (var i=1; i<=pages; i++){
+      $('.special-carousel--grid > .item').slice(0,3).wrapAll("<div></div>");
+    }
+  }
+}
+$('.special-carousel--grid').owlCarousel({
+	loop:true,
+	margin:0,
+	nav:false,
+	dots:true,
+	autoplay:true,
+  autoplayTimeout:6000,
+	autoplayHoverPause:true,
+  responsive:{
+        0:{
+            items:1,
+            slideBy: 1
+        },
+        767:{
+            items:4,
+            slideBy: 4
         }
   }
 });
