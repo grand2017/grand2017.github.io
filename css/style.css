@@ -520,7 +520,7 @@ section {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
   transition: .5s;
 }
-.special-carousel .center .item, {
+.special-carousel .center .item {
   transform: scale(1.2);
 }
 .special .owl-theme .owl-nav [class*=owl-] {
