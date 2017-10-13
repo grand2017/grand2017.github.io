@@ -1504,3 +1504,65 @@ footer .section-caption {
   width: 100%;
   height: auto;
 }
+.special-page {
+	margin-bottom: 45px;
+}
+.special-page .container {
+	padding-top: 120px;
+}
+.schedule-page {
+	padding-top: 30px;
+	margin-top: -40px;
+}
+.reg-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.reg-top__left {
+	width: 320px;
+}
+.reg-top__left img {
+	width: 100%;
+	height: auto;
+}
+.reg-top__left .btn {
+	display: block;
+	margin: 0;
+	margin-top: 15px;
+}
+.reg-top__right {
+	width: 450px;
+	height: 290px;
+	background: rgba(57,49,75,.85);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	padding: 10px 30px 20px;
+}
+.reg-page .container {
+	padding-top: 190px;
+}
+.reg-page .exhibition {
+	margin-top: 60px;
+}
+.reg-top__right h2 {
+	color: #fff;
+  font-family: "Proxima";
+  text-transform: uppercase;
+  font-size: 18px;
+	text-align: center;
+}
+.reg-top__right .btn {
+	width: 100%;
+	font-size: 20px;
+	padding: 18px 0;
+	background: rgba(58,181,181,.9);
+}
+.reg-top__right .btn:hover {
+	background: rgba(58,181,181,1);
+}
+.map-page {
+	margin-top: -123px;
+}
+.map-page .exhibition {
+	margin-top: 135px;
+}

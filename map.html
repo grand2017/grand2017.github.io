@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Выставка</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__logo">
+					<a href="/"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<input type="checkbox" id="location-check">
+				<label for="location-check" class="header__location">
+					МТК «ГРАНД», Ленинградское шоссе, 100 метров от МКАД, г. Химки, Бутаково 4
+				</label>
+				<div class="location-popup">
+					<a href="#">Показать на большой карте</a>
+					<img src="img/map.png" alt="map">
+					<p>Режим работы:</p>
+					<p>Ежедневно, c 10:00 до 21:00</p>
+				</div>
+				<div class="header__phone">
+					<span>+7 (495)</span> 780-33-33
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<nav class="main-nav">
+					<a class="main-nav__link" href="#">О выставке</a>
+					<a class="main-nav__link" href="#">Участники</a>
+					<a class="main-nav__link" href="#">Программа</a>
+					<a class="main-nav__link" href="#">Спецпредложения</a>
+					<a class="main-nav__link active" href="#">Как добраться</a>
+					<a class="main-nav__link" href="#">Вход / регистрация</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="members-top special-page">
+		<div class="container"></div>
+	</section>
+	<section class="map map-page">
+		<div class="container">
+			<div class="main__left">
+				<h2 class="exhibition"><span class="first-line">Выставка</span><span class="second-line">производителей</span><span class="third-line">мебели</span></h2>
+				<img src="img/date.png" alt="date">
+				<div class="contacts">
+					<div class="contact">МТК «ГРАНД», Ленинградское ш., 100 метров от МКАД (в сторону области), г. Химки, Бутаково 4</div>
+					<div class="contact contact--phone">+7 (495) 780-33-33</div>
+					<div class="contact contact--mail">info@grandfs.ru</div>
+				</div>
+			</div>
+			<div class="map__info">
+			</div>
+		</div>
+		<div id="map"></div>
+	</section>
+
+  <footer>
+    <div class="section-caption">
+      <div class="container">
+        <span class="age">0+</span><span>Все права защищены © МТК «ГРАНД»</span>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="js/marquee.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaDge1lBjsk-_KWvE3JoOZR17YjDO5vKo&signed_in=true&callback=initMap" async defer></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

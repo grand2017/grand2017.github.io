@@ -134,7 +134,7 @@ $('.special-popup__img').click(function(){
 $('.popup-close').click(function(){
   $('.special-popup').fadeOut();
 });
-$('.item__btn').click(function(){
+$('.special-carousel .item').click(function(){
   $('.special-popup').fadeIn();
 });
 function initMap() {
