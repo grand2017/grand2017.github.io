@@ -556,6 +556,9 @@ section {
 .special .item__img, .member-info .item__img {
   padding: 5px 50px;
   background: #fff;
+	height: 200px;
+	display: flex;
+	align-items: center;
 }
 .special .item__caption, .member-info .item__caption {
   background: #FF5555;
@@ -853,9 +856,13 @@ section {
   background: #fff;
   padding: 5px 15px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+	height: 6vw;
+	display: flex;
+	align-items: center;
 }
 .partners-carousel--members .item {
   width: 16.66vw;
+	height: 12vw;
 }
 
 @media (min-width: 1600px) {
@@ -1224,6 +1231,9 @@ footer .section-caption {
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.30);
   padding: 20px;
   background: #fff;
+	height: 225px;
+	display: flex;
+	align-items: center;
 }
 .member-logo img {
   width: 100%;
@@ -1497,6 +1507,8 @@ footer .section-caption {
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
   padding: 10px 15px;
+	display: flex;
+	align-items: center;
 }
 .members-grid__item img {
   width: 100%;
