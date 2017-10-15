@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Выставка</title>
+	<link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__logo">
+					<a href="/"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<input type="checkbox" id="location-check">
+				<label for="location-check" class="header__location">
+					МТК «ГРАНД», Ленинградское шоссе, 100 метров от МКАД, г. Химки, Бутаково 4
+				</label>
+				<div class="location-popup">
+					<a href="#">Показать на большой карте</a>
+					<img src="img/map.png" alt="map">
+					<p>Режим работы:</p>
+					<p>Ежедневно, c 10:00 до 21:00</p>
+				</div>
+				<div class="header__phone">
+					<span>+7 (495)</span> 780-33-33
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<nav class="main-nav">
+					<a class="main-nav__link" href="#">О выставке</a>
+					<a class="main-nav__link" href="#">Участники</a>
+					<a class="main-nav__link" href="#">Программа</a>
+					<a class="main-nav__link" href="#">Спецпредложения</a>
+					<a class="main-nav__link" href="#">Как добраться</a>
+					<a class="main-nav__link active" href="#">Вход / регистрация</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+  <section class="members-top dashboard">
+    <div class="container">
+      <div class="main__left">
+				<div class="exhibition"><span class="first-line">Выставка</span><span class="second-line">производителей</span><span class="third-line">мебели</span></div>
+				<img src="img/date.png" alt="date">
+				<a class="btn">Ваш билет</a>
+			</div>
+			<form>
+				<div class="dashboard__right">
+					<div class="user-info">
+						<span class="input" style="width: 55%; display: inline-block;">
+							<input class="input__field" type="text" id="reg-surname" placeholder="Иванов" value="Иванов">
+							<label class="input__label" for="reg-surname">
+								<i class="fa fa-fw fa-user icon"></i>
+							</label>
+						</span><input class="input__field--name" type="text" id="reg-name" placeholder="Иван" value="Иван" style="width: 45%; display: inline-block;">
+						<span class="input">
+							<input class="input__field" type="text" id="reg-email" placeholder="mail@example.com" value="mail@example.com">
+							<label class="input__label" for="reg-email">
+								<i class="fa fa-fw fa-envelope icon"></i>
+							</label>
+						</span>
+						<span class="input">
+							<input class="input__field" type="text" id="reg-phone" placeholder="+7 (123) 456-78-90" value="+7 (123) 456-78-90">
+							<label class="input__label" for="reg-phone">
+								<i class="fa fa-fw fa-phone icon"></i>
+							</label>
+						</span>
+						<button class="btn">Изменить данные</button>
+					</div>
+					<div class="user-checks">
+						<h2>Участник</h2>
+						<input type="checkbox" class="reg-check" id="reg-check1" checked>
+						<label for="reg-check1">Выставка-продажа</label>
+						<input type="checkbox" class="reg-check" id="reg-check2">
+						<label for="reg-check2">Программа для дизайнера, архитектора</label>
+						<input type="checkbox" class="reg-check" id="reg-check3">
+						<label for="reg-check3">Программа для дилера, франчайзи</label>
+						<div class="dashboard-anchor dashboard-anchor--event"><i class="icon fa fa-fw fa-calendar"></i> Хочу посетить</div>
+						<div class="dashboard-anchor dashboard-anchor--meet"><i class="icon fa fa-fw fa-user"></i> Хочу встретиться</div>
+					</div>
+				</div>
+			</form>
+    </div>
+  </section>
+	<section class="schedule" id="schedule">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Хочу посетить</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="themes-filters">
+				<div class="themes-filters__item active" data-theme="customer">Программа для покупателей</div>
+				<div class="themes-filters__item" data-theme="dealer">Для дилеров/франчайзи</div>
+				<div class="themes-filters__item" data-theme="designer">Для дизайнеров/архитекторов</div>
+			</div>
+			<div class="schedule-wrapper">
+				<div class="date-filters">
+					<div class="date-filters__item active" data-date="18">18.11</div>
+					<div class="date-filters__item" data-date="19">19.11</div>
+					<div class="date-filters__item" data-date="20">20.11</div>
+					<div class="date-filters__item" data-date="21">21.11</div>
+					<div class="date-filters__item" data-date="22">22.11</div>
+					<div class="date-filters__item" data-date="23">23.11</div>
+					<div class="date-filters__item" data-date="24">24.11</div>
+					<div class="date-filters__item" data-date="25">25.11</div>
+					<div class="date-filters__item" data-date="26">26.11</div>
+				</div>
+				<div class="events">
+					<input type="checkbox" class="schedule-check" id="schedule-check1">
+					<label for="schedule-check1" class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+						<div class="overlay">
+							<div class="event-btn event-btn--check">Хочу посетить</div>
+							<div class="event-btn event-btn--uncheck">Отказаться</div>
+						</div>
+					</label>
+					<input type="checkbox" class="schedule-check" id="schedule-check2">
+					<label for="schedule-check2" class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+						<div class="overlay">
+							<div class="event-btn event-btn--check">Хочу посетить</div>
+							<div class="event-btn event-btn--uncheck">Отказаться</div>
+						</div>
+					</label>
+					<input type="checkbox" class="schedule-check" id="schedule-check3">
+					<label for="schedule-check3" class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+						<div class="overlay">
+							<div class="event-btn event-btn--check">Хочу посетить</div>
+							<div class="event-btn event-btn--uncheck">Отказаться</div>
+						</div>
+					</label>
+					<input type="checkbox" class="schedule-check" id="schedule-check4">
+					<label for="schedule-check4" class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+						<div class="overlay">
+							<div class="event-btn event-btn--check">Хочу посетить</div>
+							<div class="event-btn event-btn--uncheck">Отказаться</div>
+						</div>
+					</label>
+					<input type="checkbox" class="schedule-check" id="schedule-check5">
+					<label for="schedule-check5" class="events__item active" data-theme="customer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы для покупателей</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+						<div class="overlay">
+							<div class="event-btn event-btn--check">Хочу посетить</div>
+							<div class="event-btn event-btn--uncheck">Отказаться</div>
+						</div>
+					</label>
+					<input type="checkbox" class="schedule-check" id="schedule-check6">
+					<label for="schedule-check6" class="events__item" data-theme="dealer" data-date="18">
+						<div class="events__info">
+							<div class="events__icon">10:00 - 12:00</div>
+							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+						</div>
+						<div class="events__desc">
+							<h3>Заголовок пункта программы выставки</h3>
+							<p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+						</div>
+						<div class="overlay">
+							<div class="event-btn event-btn--check">Хочу посетить</div>
+							<div class="event-btn event-btn--uncheck">Отказаться</div>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="members dashboard">
+		<div class="section-caption">
+			<div class="container">
+				<h2>Хочу встретиться</h2>
+			</div>
+		</div>
+		<div class="filters-panel">
+			<div class="container">
+				<div class="toggler">
+					<input type="radio" name="toggler" id="all-members" checked>
+					<label for="all-members">Все участники</label>
+					<input type="radio" name="toggler" id="selected-members">
+					<label for="selected-members">Выбранные</label>
+				</div>
+				<div class="letter-filter">
+					<form>
+						<input type="radio" id="letter1" name ="letter" value="а" checked><label for="letter1">А</label>
+						<input type="radio" id="letter2" name ="letter" value="б"><label for="letter2">Б</label>
+						<input type="radio" id="letter3" name ="letter" value="в"><label for="letter3">В</label>
+						<input type="radio" id="letter4" name ="letter" value="г"><label for="letter4">Г</label>
+						<input type="radio" id="letter5" name ="letter" value="д"><label for="letter5">Д</label>
+						<input type="radio" id="letter6" name ="letter" value="е"><label for="letter6">Е</label>
+						<input type="radio" id="letter7" name ="letter" value="ж"><label for="letter7">Ж</label>
+						<input type="radio" id="letter8" name ="letter" value="з"><label for="letter8">З</label>
+						<input type="radio" id="letter9" name ="letter" value="и"><label for="letter9">И</label>
+						<input type="radio" id="letter10" name ="letter" value="к"><label for="letter10">К</label>
+						<input type="radio" id="letter11" name ="letter" value="л"><label for="letter11">Л</label>
+						<input type="radio" id="letter12" name ="letter" value="м"><label for="letter12">М</label>
+						<input type="radio" id="letter13" name ="letter" value="н"><label for="letter13">Н</label>
+						<input type="radio" id="letter14" name ="letter" value="о"><label for="letter14">О</label>
+						<input type="radio" id="letter15" name ="letter" value="п"><label for="letter15">П</label>
+						<input type="radio" id="letter16" name ="letter" value="р"><label for="letter16">Р</label>
+						<input type="radio" id="letter17" name ="letter" value="с"><label for="letter17">С</label>
+						<input type="radio" id="letter18" name ="letter" value="т"><label for="letter18">Т</label>
+						<input type="radio" id="letter19" name ="letter" value="у"><label for="letter19">У</label>
+						<input type="radio" id="letter20" name ="letter" value="ф"><label for="letter20">Ф</label>
+						<input type="radio" id="letter21" name ="letter" value="х"><label for="letter21">Х</label>
+						<input type="radio" id="letter22" name ="letter" value="ц"><label for="letter22">Ц</label>
+						<input type="radio" id="letter23" name ="letter" value="ч"><label for="letter23">Ч</label>
+						<input type="radio" id="letter24" name ="letter" value="ш"><label for="letter24">Ш</label>
+						<input type="radio" id="letter25" name ="letter" value="щ"><label for="letter25">Щ</label>
+						<input type="radio" id="letter26" name ="letter" value="э"><label for="letter26">Э</label>
+						<input type="radio" id="letter27" name ="letter" value="ю"><label for="letter27">Ю</label>
+						<input type="radio" id="letter28" name ="letter" value="я"><label for="letter28">Я</label>
+						<br>
+						<input type="radio" id="letter29" name ="letter" value="a"><label for="letter29">A</label>
+						<input type="radio" id="letter30" name ="letter" value="b"><label for="letter30">B</label>
+						<input type="radio" id="letter31" name ="letter" value="c"><label for="letter31">C</label>
+						<input type="radio" id="letter32" name ="letter" value="d"><label for="letter32">D</label>
+						<input type="radio" id="letter33" name ="letter" value="e"><label for="letter33">E</label>
+						<input type="radio" id="letter34" name ="letter" value="f"><label for="letter34">F</label>
+						<input type="radio" id="letter35" name ="letter" value="g"><label for="letter35">G</label>
+						<input type="radio" id="letter36" name ="letter" value="h"><label for="letter36">H</label>
+						<input type="radio" id="letter37" name ="letter" value="i"><label for="letter37">I</label>
+						<input type="radio" id="letter38" name ="letter" value="j"><label for="letter38">J</label>
+						<input type="radio" id="letter39" name ="letter" value="k"><label for="letter39">K</label>
+						<input type="radio" id="letter40" name ="letter" value="l"><label for="letter40">L</label>
+						<input type="radio" id="letter41" name ="letter" value="m"><label for="letter41">M</label>
+						<input type="radio" id="letter42" name ="letter" value="n"><label for="letter42">N</label>
+						<input type="radio" id="letter43" name ="letter" value="o"><label for="letter43">O</label>
+						<input type="radio" id="letter44" name ="letter" value="p"><label for="letter44">P</label>
+						<input type="radio" id="letter45" name ="letter" value="q"><label for="letter45">Q</label>
+						<input type="radio" id="letter46" name ="letter" value="r"><label for="letter46">R</label>
+						<input type="radio" id="letter47" name ="letter" value="s"><label for="letter47">S</label>
+						<input type="radio" id="letter48" name ="letter" value="t"><label for="letter48">T</label>
+						<input type="radio" id="letter49" name ="letter" value="u"><label for="letter49">U</label>
+						<input type="radio" id="letter50" name ="letter" value="v"><label for="letter50">V</label>
+						<input type="radio" id="letter51" name ="letter" value="w"><label for="letter51">W</label>
+						<input type="radio" id="letter52" name ="letter" value="x"><label for="letter52">X</label>
+						<input type="radio" id="letter53" name ="letter" value="y"><label for="letter53">Y</label>
+						<input type="radio" id="letter54" name ="letter" value="z"><label for="letter54">Z</label>
+					</form>
+				</div>
+				<div class="search">
+					<form>
+					<input type="text" placeholder="Поиск участников">
+					<input type="submit">
+					</form>
+				</div>
+				<div class="cat-filter">
+					<input id="cat-filter-check" type="checkbox">
+					<label for="cat-filter-check"></label>
+					<div class="filter-dropdown">
+						<h2>Фильтр по категориям мебели</h2>
+						<form>
+						<input type="checkbox" id="cat1" checked><label for="cat1">Категория 1</label>
+						<input type="checkbox" id="cat2" checked><label for="cat2">Категория 2</label>
+						<input type="checkbox" id="cat3" checked><label for="cat3">Категория 3</label>
+						<input type="checkbox" id="cat4" checked><label for="cat4">Категория 4</label>
+						<input type="checkbox" id="cat5" checked><label for="cat5">Категория 5</label>
+						<input type="checkbox" id="cat6" checked><label for="cat6">Категория 6</label>
+						<input type="checkbox" id="cat7" checked><label for="cat7">Категория 7</label>
+						<input type="checkbox" id="cat8" checked><label for="cat8">Категория 8</label>
+						<input type="checkbox" id="cat9" checked><label for="cat9">Категория 9</label>
+						<input type="checkbox" id="cat10" checked><label for="cat10">Категория 10</label>
+						<input type="checkbox" id="cat11" checked><label for="cat11">Категория 11</label>
+						<input type="checkbox" id="cat12" checked><label for="cat12">Категория 12</label>
+						<input type="checkbox" id="cat13" checked><label for="cat13">Категория 13</label>
+						<input type="checkbox" id="cat14" checked><label for="cat14">Категория 14</label>
+						<input type="checkbox" id="cat15" checked><label for="cat15">Категория 15</label>
+						<input type="checkbox" id="cat16" checked><label for="cat16">Категория 16</label>
+						<input type="checkbox" id="cat17" checked><label for="cat17">Категория 17</label>
+						<input type="checkbox" id="cat18" checked><label for="cat18">Категория 18</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="members-grid">
+				<input type="checkbox" id="member-check1">
+				<label for="member-check1" class="members-grid__item"><img src="img/members/member1.png"></label>
+				<input type="checkbox" id="member-check2">
+				<label for="member-check2" class="members-grid__item"><img src="img/members/member2.png"></label>
+				<input type="checkbox" id="member-check3">
+				<label for="member-check3" class="members-grid__item"><img src="img/members/member3.png"></label>
+				<input type="checkbox" id="member-check4">
+				<label for="member-check4" class="members-grid__item"><img src="img/members/member1.png"></label>
+				<input type="checkbox" id="member-check5">
+				<label for="member-check5" class="members-grid__item"><img src="img/members/member2.png"></label>
+				<input type="checkbox" id="member-check6">
+				<label for="member-check6" class="members-grid__item"><img src="img/members/member3.png"></label>
+				<input type="checkbox" id="member-check7">
+				<label for="member-check7" class="members-grid__item"><img src="img/members/member1.png"></label>
+				<input type="checkbox" id="member-check8">
+				<label for="member-check8" class="members-grid__item"><img src="img/members/member2.png"></label>
+				<input type="checkbox" id="member-check9">
+				<label for="member-check9" class="members-grid__item"><img src="img/members/member3.png"></label>
+				<input type="checkbox" id="member-check10">
+				<label for="member-check10" class="members-grid__item"><img src="img/members/member1.png"></label>
+				<input type="checkbox" id="member-check11">
+				<label for="member-check11" class="members-grid__item"><img src="img/members/member2.png"></label>
+				<input type="checkbox" id="member-check12">
+				<label for="member-check12" class="members-grid__item"><img src="img/members/member3.png"></label>
+			</div>
+		</div>
+	</section>
+
+  <footer>
+    <div class="section-caption">
+      <div class="container">
+        <span class="age">0+</span><span>Все права защищены © МТК «ГРАНД»</span>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="js/marquee.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaDge1lBjsk-_KWvE3JoOZR17YjDO5vKo&signed_in=true&callback=initMap" async defer></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
