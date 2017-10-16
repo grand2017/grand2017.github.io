@@ -44,6 +44,7 @@ $('.special-carousel--home').owlCarousel({
         }
   }
 });
+/*
 if ($('.special-carousel--grid').length) {
   var items = $('.special-carousel--grid > .item').length;
   if (items >= 12) {
@@ -53,6 +54,7 @@ if ($('.special-carousel--grid').length) {
     }
   }
 }
+*/
 function updateSpecial() {
   $('.special-carousel--grid').owlCarousel({
   	loop:true,
