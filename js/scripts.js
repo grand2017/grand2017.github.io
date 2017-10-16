@@ -158,7 +158,7 @@ $('.special-popup__img').click(function(){
 $('.popup-close').click(function(){
   $('.special-popup').fadeOut();
 });
-$('.special-carousel .item').click(function(){
+$('.special-carousel .item, .member-info .item').click(function(){
   $('.special-popup').fadeIn();
 });
 function initMap() {
