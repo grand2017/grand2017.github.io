@@ -53,25 +53,36 @@ if ($('.special-carousel--grid').length) {
     }
   }
 }
-$('.special-carousel--grid').owlCarousel({
-	loop:true,
-	margin:0,
-	nav:false,
-	dots:true,
-	autoplay:true,
-  autoplayTimeout:6000,
-	autoplayHoverPause:true,
-  responsive:{
-        0:{
-            items:1,
-            slideBy: 1
-        },
-        767:{
-            items:4,
-            slideBy: 4
-        }
-  }
-});
+function updateSpecial() {
+  $('.special-carousel--grid').owlCarousel({
+  	loop:true,
+  	margin:0,
+  	nav:false,
+  	dots:true,
+  	autoplay:true,
+    autoplayTimeout:6000,
+  	autoplayHoverPause:true,
+    responsive:{
+          0:{
+              items:1
+          },
+          767:{
+              items:2,
+              slideBy: 2
+          },
+          1023:{
+              items:3,
+              slideBy: 3
+          },
+          1279:{
+              items:4,
+              slideBy: 4
+          }
+    }
+  });
+}
+updateSpecial();
+
 $('.speakers-carousel').owlCarousel({
 	loop:true,
 	margin:0,
@@ -82,7 +93,12 @@ $('.speakers-carousel').owlCarousel({
             items:1
         },
         767:{
-            items:3
+            items:2,
+            slideBy: 2
+        },
+        1023:{
+            items:3,
+            slideBy: 3
         }
   }
 });
@@ -99,6 +115,12 @@ $('.news-carousel').owlCarousel({
             items:1
         },
         767:{
+            items:2
+        },
+        1023:{
+            items:3
+        },
+        1279:{
             items:4
         }
   }
