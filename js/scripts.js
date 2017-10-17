@@ -69,10 +69,6 @@ function updateSpecial() {
               items:1
           },
           767:{
-              items:2,
-              slideBy: 2
-          },
-          1023:{
               items:3,
               slideBy: 3
           },

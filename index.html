@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 </head>
@@ -26,7 +27,7 @@
 					<a href="#">Показать на большой карте</a>
 					<img src="img/map.png" alt="map">
 					<p>Режим работы:</p>
-					<p>Ежедневно, c 10:00 до 21:00</p>
+					<p>Ежедневно, c 10:00 до 23:00</p>
 				</div>
 				<div class="header__phone">
 					<span>+7 (495)</span> 780-33-33
@@ -45,6 +46,30 @@
 				</nav>
 			</div>
 		</div>
+		<div class="header__bottom--mobile hidden-desktop">
+			<div class="container">
+				<input type="checkbox" id="location-check2">
+				<label for="location-check2" class="header__location"></label>
+				<div class="location-popup">
+					<a href="#">Показать на большой карте</a>
+					<img src="img/map.png" alt="map">
+					<p>Режим работы:</p>
+					<p>Ежедневно, c 10:00 до 23:00</p>
+				</div>
+				<div class="header__bottom--mobile__link">
+					<a class="main-nav__link" href="#">Вход / регистрация</a>
+				</div>
+				<input type="checkbox" id="burger-check">
+				<label for="burger-check"><span></span><span></span><span></span></label>
+				<div class="mobile-dropdown">
+					<a class="main-nav__link" href="#">О выставке</a>
+					<a class="main-nav__link" href="#">Участники</a>
+					<a class="main-nav__link" href="#">Программа</a>
+					<a class="main-nav__link" href="#">Спецпредложения</a>
+					<a class="main-nav__link" href="#">Как добраться</a>
+				</div>
+			</div>
+		</div>
 	</header>
 	<section class="main">
 		<div class="container">
@@ -57,12 +82,72 @@
 				<div class="slider owl-carousel owl-theme">
 					<div class="item slider__slide">
 						<div class="slider__caption">Все категории мебели</div>
+						<div class="slider__content">
+							<div class="furniture-cats">
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat1.svg">
+									</div>
+									<h2>Кухни</h2>
+								</div>
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat2.svg">
+									</div>
+									<h2>Диваны</h2>
+								</div>
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat3.svg">
+									</div>
+									<h2>Спальни</h2>
+								</div>
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat4.svg">
+									</div>
+									<h2>Столовые</h2>
+								</div>
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat5.svg">
+									</div>
+									<h2>Матрасы</h2>
+								</div>
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat6.svg">
+									</div>
+									<h2>Сантехника</h2>
+								</div>
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat7.svg">
+									</div>
+									<h2>Интерьер</h2>
+								</div>
+								<div class="furniture-cats__item">
+									<div class="furniture-cats__img">
+										<img src="img/slider/cat8.svg">
+									</div>
+									<h2>Детская</h2>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="item slider__slide">
-						<div class="slider__caption">Заголовок слайда 2</div>
+						<div class="slider__content million">
+							<h2>Хотите выиграть</h2>
+							<div class="slider__caption"><h2><span>1 000 000</span> рублей?</h2></div>
+							<h3>Не упустите свой шанс на ВЫСТАВКЕ ПРОИЗВОДИТЕЛЕЙ МЕБЕЛИ!</h3>
+						</div>
 					</div>
 					<div class="item slider__slide">
-						<div class="slider__caption">Заголовок слайда 3</div>
+						<div class="slider__content million">
+							<h2>Лучшие спикеры - 21 ноября в Гранде</h2>
+							<div class="slider__caption"><h2>Игорь Манн, Алексей Иванов, Институт Адизеса</h2></div>
+							<h3>Впервые вместе на одной площадке!</h3>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -83,36 +168,57 @@
 			<div class="about__right">
 				<div class="about-slider owl-carousel owl-theme">
 					<div class="about-slider__slide item">
-						<h3>Выставка-продажа</h3>
-						<h4>Грандиозное событие для покупателей!</h4>
-						<p>Мебельные бренды от 500 производителей из 30 стран мира по выгодным ценам.</p>
+						<h3>ГРАНДИОЗНЫЙ ВЫБОР И ОЩУТИМАЯ ВЫГОДА</h3>
+						<h4>На самой большой мебельной площадке в Европе в рамках Выставки:</h4>
 						<ul>
 							<li>Все категории мебели</li>
-							<li>Все ценовые сегменты</li>
-							<li>Все направления в дизайне</li>
-							<li>Лучшие спецпредложения</li>
+							<li>Специальные предложения и скидки</li>
+							<li>Тысячи новинок</li>
+							<li>Более 500 брендов</li>
+							<li>Отечественные и зарубежные производители</li>
+							<li>Интерьеры из 30 стран мира</li>
+							<li>Бесплатные консультации дизайнеров</li>
+							<li>Шопинг гиды</li>
+							<li>Розыгрыш 1 000 000 рублей!</li>
 						</ul>
 					</div>
 					<div class="about-slider__slide item">
-						<h3>Заголовок слайда 2</h3>
-						<h4>Грандиозное событие для покупателей!</h4>
-						<p>Мебельные бренды от 500 производителей из 30 стран мира по выгодным ценам.</p>
+						<h3>РАЗВЛЕЧЕНИЯ И ОТДЫХ ДЛЯ КАЖДОГО</h3>
+						<h4>Проведите целый день в Гранде всей семьей. Для вас более 30 зон отдыха:</h4>
 						<ul>
-							<li>Все категории мебели</li>
-							<li>Все ценовые сегменты</li>
-							<li>Все направления в дизайне</li>
-							<li>Лучшие спецпредложения</li>
+							<li>Кафе и рестораны</li>
+							<li>Бармен-шоу и коктейли</li>
+							<li>Конкурсы и мастер-классы для детей и взрослых</li>
+							<li>Необычные фотозоны</li>
+							<li>Подарки и сюрпризы</li>
+							<li>Рождественская ярмарка</li>
+							<li>Зоны отдыха и релаксации</li>
+							<li>Камера хранения мужчин!</li>
 						</ul>
 					</div>
 					<div class="about-slider__slide item">
-						<h3>Заголовок слайда 3</h3>
-						<h4>Грандиозное событие для покупателей!</h4>
-						<p>Мебельные бренды от 500 производителей из 30 стран мира по выгодным ценам.</p>
+						<h3>ГРАНД ОБЪЕДИНЯЕТ ПРОФЕССИОНАЛОВ</h3>
+						<h4>21-23 ноября состоятся ДНИ РАЗВИТИЯ БИЗНЕСА, в рамках которых:</h4>
 						<ul>
-							<li>Все категории мебели</li>
-							<li>Все ценовые сегменты</li>
-							<li>Все направления в дизайне</li>
-							<li>Лучшие спецпредложения</li>
+							<li>21 ноября: ДЕНЬ ОБРАЗОВАНИЯ<br>
+									<span>
+										Лекция по МЕНЕДЖМЕНТУ – от эксперта Института Адизеса<br>
+										Лекция по DIGITAL-маркетингу – от Алексея Иванова<br>
+										Лекция по МАРКЕТИНГУ – от Игоря Манна
+									</span>
+							</li>
+							<li>22 ноября: ДЕНЬ ДИЛЕРА и ФРАНЧАЙЗИ<br>
+									<span>
+										Отраслевая конференция по вопросам мебельного бизнеса. Успешные кейсы от ведущих игроков рынка.<br>
+										Партнер мероприятия: Журнал “Мебельный Бизнес”
+									</span>
+							</li>
+							<li>23 ноября: ДЕНЬ ДИЗАЙНЕРА и АРХИТЕКТОРА<br>
+								<span>
+									Тренды, кейсы, конкурсы, мастер-классы.
+								</span>
+							</li>
+							<li>Вечерний фуршет для профессионалов мебельной отрасли!</li>
 						</ul>
 					</div>
 				</div>
@@ -477,7 +583,7 @@
 					<div class="events__item active" data-theme="customer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -487,7 +593,7 @@
 					<div class="events__item active" data-theme="customer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -497,7 +603,7 @@
 					<div class="events__item active" data-theme="customer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -507,7 +613,7 @@
 					<div class="events__item active" data-theme="customer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -517,7 +623,7 @@
 					<div class="events__item active" data-theme="customer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -527,7 +633,7 @@
 					<div class="events__item" data-theme="dealer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы выставки</h3>
@@ -537,7 +643,7 @@
 					<div class="events__item active" data-theme="customer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -547,7 +653,7 @@
 					<div class="events__item" data-theme="dealer" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы выставки</h3>
@@ -557,7 +663,7 @@
 					<div class="events__item active" data-theme="customer" data-date="19">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -567,7 +673,7 @@
 					<div class="events__item" data-theme="dealer" data-date="19">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы выставки</h3>
@@ -577,7 +683,7 @@
 					<div class="events__item active" data-theme="customer" data-date="19">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы для покупателей</h3>
@@ -587,7 +693,7 @@
 					<div class="events__item" data-theme="dealer" data-date="19">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
-							<div class="events__icon events__icon--location">Гранд-2<br>Этаж 1</div>
+							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
 						</div>
 						<div class="events__desc">
 							<h3>Заголовок пункта программы выставки</h3>
@@ -641,21 +747,6 @@
 							</div>
 							<div class="speaker__date">
 								21 октября, 12:00
-							</div>
-						</div>
-					</div>
-					<div class="item speaker">
-						<div class="speaker__inner">
-							<div class="speaker__top">
-								<div class="speaker__img">
-									<img src="img/speakers/speaker1.png">
-								</div>
-								<div class="speaker__name">
-									Игорь<br>Манн
-								</div>
-							</div>
-							<div class="speaker__date">
-								21 октября, 17:15
 							</div>
 						</div>
 					</div>
