@@ -153,9 +153,13 @@ $('.special-popup__img').click(function(){
 });
 $('.popup-close').click(function(){
   $('.special-popup').fadeOut();
+  $('.news-popup').fadeOut();
 });
 $('.special-carousel .item, .member-info .item').click(function(){
   $('.special-popup').fadeIn();
+});
+$('.news-carousel__item').click(function(){
+  $('.news-popup').fadeIn();
 });
 function initMap() {
   if ($('#map').length) {

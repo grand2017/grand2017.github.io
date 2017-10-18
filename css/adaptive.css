@@ -156,6 +156,14 @@
   .about-slider__slide span {
     font-size: 14px;
   }
+  .about-top p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .news-popup .inner {
+    width: 1024px;
+  }
 }
 @media (max-width: 1023px) {
   .container {
@@ -501,6 +509,10 @@
   }
   .members.dashboard .search, .members.dashboard .search input[type="text"] {
     width: 660px;
+  }
+  .news-popup .inner {
+    width: 640px;
+    height: auto;
   }
 }
 @media (max-width: 767px) {
@@ -940,7 +952,16 @@
     width: 100%;
     font-size: 20px;
   }
-
-
-
+  .about-top {
+    margin-top: -25px;
+  }
+  .about-top p {
+    font-size: 16px;
+  }
+  .about-page__panel p {
+    font-size: 14px;
+  }
+  .news-popup .inner {
+    width: 100%;
+  }
 }
