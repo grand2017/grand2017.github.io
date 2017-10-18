@@ -1819,27 +1819,46 @@ footer .section-caption {
 	color: #404040;
 	margin-bottom: 8px;
 }
+.about-top {
+	background: rgba(255,255,255,.8);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	padding: 20px 30px;
+	margin-top: -25px;
+}
 .about-top p {
 	font-size: 20px;
 	font-family: "Roboto";
-	color: #fff;
-	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	color: #63609D;
 }
 .about-page {
 	margin-top: -25px;
 }
-.about-page__panel {
-	margin: 40px 0;
+.about-page__blocks {
+	margin: 30px 0;
+}
+.about-page__block {
 	background: rgba(255,255,255,.8);
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-	padding: 20px 30px;
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
 }
-.about-page__panel p {
+.about-page__img {
+	width: 350px;
+}
+.about-page__img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.about-page__text {
+	width: 850px;
+	padding: 20px;
 	font-size: 18px;
 	font-family: "Roboto";
 	color: #404040;
 }
-.about-page__panel p span {
+.about-page__text span {
 	color: #63609D;
 	font-weight: 500;
 }
@@ -1857,7 +1876,7 @@ footer .section-caption {
   position: absolute;
   height: 570px;
   width: 1100px;
-  background: rgba(255,255,255,.8);
+  background: rgba(255,255,255,.9);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
   top: 50%;
   left: 50%;
