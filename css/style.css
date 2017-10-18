@@ -913,19 +913,47 @@ section {
   overflow-x: hidden;
 }
 .partners-carousel .item {
-  width: calc(8.33vw - 4px);
+  width: calc(10vw - 4px);
   float: left;
   margin: 2px;
   background: #fff;
   padding: 5px 15px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
-	height: 6vw;
+	height: 7vw;
 	display: flex;
 	align-items: center;
 }
 .partners-carousel--members .item {
   width: 16.66vw;
 	height: 12vw;
+}
+.infoparnters-special {
+	width: 700px;
+	display: flex;
+	margin: 30px auto;
+	justify-content: space-between;
+}
+.infoparnters-special__item {
+	width: 20%;
+}
+.infoparnters-special__img {
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+	padding: 10px 20px;
+}
+.infoparnters-special__item img {
+	width: 100%;
+}
+.infoparnters-special__item h3 {
+	color: #fff;
+	font-family: "Roboto";
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 15px;
+	font-size: 16px;
+	text-align: center;
 }
 
 @media (min-width: 1600px) {

@@ -296,8 +296,8 @@
     width: 100%;
   }
   .partners-carousel .item {
-    width: calc(16.66vw - 4px);
-    height: 12vw;
+    width: calc(20vw - 4px);
+    height: 15vw;
   }
   .partners-carousel--members .item {
     width: calc(25vw - 4px);
@@ -983,5 +983,18 @@
   .about-page__text {
     width: 100%;
     order: 2;
+  }
+  .infoparnters-special {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .infoparnters-special__item {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  .partners-carousel .item {
+    width: calc(25vw - 4px);
+    height: 18vw;
   }
 }
