@@ -1,5 +1,5 @@
 /* FONTS */
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic');
 @font-face {
 	font-family: 'Proxima';
 	src: url('../fonts/proxima/ProximaNovaCond-Semibold.eot');
@@ -9,8 +9,6 @@
 	font-weight: 600;
 	font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto:400&subset=cyrillic');
-
 /* COMMON */
 body,html {
   margin: 0;
