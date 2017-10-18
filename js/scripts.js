@@ -155,7 +155,7 @@ $('.popup-close').click(function(){
   $('.special-popup').fadeOut();
   $('.news-popup').fadeOut();
 });
-$('.special-carousel .item, .member-info .item').click(function(){
+$('.special-carousel, .member-info').on('click','.item', function(){
   $('.special-popup').fadeIn();
 });
 $('.news-carousel__item').click(function(){
