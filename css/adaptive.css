@@ -11,6 +11,29 @@
   .main__right {
     width: 640px;
   }
+  .million h2 {
+    font-size: 28px;
+  }
+  .million h3 {
+    font-size: 24px;
+  }
+  .slide4 h2, .slide5 h2 {
+  	font-size: 26px !important;
+  }
+  .slide5 h2 span {
+  	font-size: 42px !important;
+  }
+  .million-btn h3 {
+  	text-align: left !important;
+  	width: 370px;
+  	font-size: 20px !important;
+  }
+  .million-btn .btn {
+  	width: 200px;
+  	background: rgba(255,255,255,.8);
+  	color: rgba(58,181,181,.9);
+  }
+
   .about__left {
     width: 520px;
   }
@@ -676,6 +699,45 @@
     margin: 25px auto 0;
     float: none;
     clear: both;
+  }
+  .million h2 {
+    font-size: 28px;
+  }
+  .million h2 span {
+    font-size: 53px;
+  }
+  .million h3 {
+    font-size: 24px;
+  }
+  .slide4 h2, .slide5 h2 {
+  	font-size: 26px !important;
+  }
+  .slide5 h2 span {
+  	font-size: 42px !important;
+    display: block;
+  }
+  .million-btn h3 {
+  	text-align: center !important;
+  	width: 100%;
+  	font-size: 20px !important;
+  }
+  .million-btn {
+    display: block;
+  }
+  .million-btn .btn {
+    display: block;
+  	width: 100%;
+  	background: rgba(255,255,255,.8);
+  	color: rgba(58,181,181,.9);
+  }
+  .slider__content {
+    padding: 15px 10px
+  }
+  .furniture-cats__item {
+    width: 50%;
+  }
+  .slider__slide {
+    height: auto;
   }
   .subscription {
     position: static;

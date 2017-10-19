@@ -376,18 +376,77 @@ section {
 .slider__slide {
   width: 100%;
   height: 390px;
-  background: rgba(255,255,255,.15);
+  background: url(../img/slider/slide1.png);
+	background-size: cover;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 }
+.slider__slide .slider__content {
+	background: rgba(103,98,159,.7);
+}
+.slide2 .slider__content, .slide5 .slider__content {
+	background: rgba(58,181,181,.7);
+}
+.slide3 .slider__content, .slide7 .slider__content {
+	background: rgba(49,76,140,.7);
+}
+.slide4 .slider__content {
+	background: rgba(49,96,137,.7);
+}
+.slide2 {
+	background: url(../img/slider/slide2.png);
+	background-size: cover;
+}
+.slide3, .slide6, .slide7 {
+	background: url(../img/slider/slide3.png);
+	background-size: cover;
+}
+.slide4 {
+	background: url(../img/slider/slide4.png);
+	background-size: cover;
+}
 .slider__caption {
-  color: #82AAC2;
+  color: rgba(103,98,159,.9);
   text-transform: uppercase;
   text-align: center;
   font-size: 24px;
   font-family: "Proxima";
   height: 60px;
   padding-top: 15px;
-  background: rgba(255,255,255,.7);
+  background: rgba(255,255,255,.9);
+}
+.slide2 .slider__caption h2, .slide5 .slider__caption h2 {
+	color: rgba(58,181,181,.9) !important;
+}
+.slide3 .slider__caption h2, .slide7 .slider__caption h2 {
+	color: rgba(49,76,140,.9) !important;
+}
+.slide4 .slider__caption h2 {
+	color: rgba(49,96,137,.9) !important;
+}
+.slide6 .slider__caption h2 {
+	color: rgba(103,98,159,.9) !important;
+}
+.million-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+.slide4 h2, .slide5 h2 {
+	font-size: 34px !important;
+}
+.slide5 h2 span {
+	font-size: 55px !important;
+}
+.million-btn h3 {
+	text-align: left !important;
+	width: 470px;
+	font-size: 27px !important;
+}
+.million-btn .btn {
+	width: 230px;
+	background: rgba(255,255,255,.8);
+	color: rgba(58,181,181,.9);
 }
 .main .owl-theme .owl-nav [class*=owl-] {
   font-size: 0;
@@ -407,6 +466,7 @@ section {
 }
 .slider__content {
 	padding: 30px 50px;
+	height: 100%;
 }
 .furniture-cats {
 	display: flex;
@@ -426,6 +486,7 @@ section {
 	width: 40% !important;
 	height: auto;
 	display: inline-block !important;
+	filter: drop-shadow(0 2px 4px rgba(0,0,0,0.40));
 }
 .furniture-cats__item h2 {
 	font-family: "Proxima";
@@ -433,6 +494,7 @@ section {
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
+	filter: drop-shadow(0 2px 4px rgba(0,0,0,0.40));
 }
 .million h2 {
 	font-family: "Proxima";
