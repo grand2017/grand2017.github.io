@@ -135,22 +135,28 @@ $('.partners-carousel--members').marquee({
     setStartPosition: 100
 });
 $('.themes-filters__item').click(function(){
-	$('.themes-filters__item').removeClass('active');
+  $('.date-filters__item, .themes-filters__item, .events__item').removeClass('active');
 	$(this).addClass('active');
 	var theme = $(this).data('theme');
-	var date = $('.date-filters__item.active').data('date');
-	$('.events__item').removeClass('active');
-	$('[data-theme=' + theme + '][data-date=' + date + ']').addClass('active');
+  if (theme == 'tab6'){
+    $('[data-date=18]').addClass('active');
+  }
+  if (theme == 'tab7'){
+    $('[data-date=22]').addClass('active');
+  }
+  if (theme == 'tab8'){
+    $('[data-date=23]').addClass('active');
+  }
 });
 $('.date-filters__item').click(function(){
 	$('.date-filters__item').removeClass('active');
 	$(this).addClass('active');
 	var date= $(this).data('date');
-	var theme = $('.themes-filters__item.active').data('theme');
 	$('.events__item').removeClass('active');
-	$('[data-theme=' + theme + '][data-date=' + date + ']').addClass('active');
+	$('[data-date=' + date + ']').addClass('active');
 });
-$('.special-popup__img').click(function(){
+$('.special-popup').on('click','.special-popup__img', function(){
+  $('.special-popup').fadeIn();
   $('.special-popup__img').removeClass('active');
   $(this).addClass('active');
 });
@@ -181,7 +187,7 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      title: 'МТК "ГРАНД"',
+      title: 'РњРўРљ "Р“Р РђРќР”"',
       icon: 'img/icons/marker.svg'
     });
   }
@@ -197,4 +203,55 @@ $('.show-all').click(function(){
   $(this).parents().find('.my_category_input').prop('checked',true);
   $(this).parents().find('.letter-filter input').prop('checked',false);
   $(this).removeClass('active');
+  $("input[type='submit']").click();
 })
+function popupspecial() {
+    $(".my_spec").on("click", function () {
+        console.log($(this).attr("data-id"));
+        $.ajax({
+            url      : '/query.php',             // СѓРєР°Р·С‹РІР°РµРј URL Рё
+            dataType : "json",                     // С‚РёРї Р·Р°РіСЂСѓР¶Р°РµРјС‹С… РґР°РЅРЅС‹С…
+            data     : {
+                "ID" : $(this).attr("data-id"),
+            },
+            type     : "POST",
+            success  : function (data) { // РІРµС€Р°РµРј СЃРІРѕР№ РѕР±СЂР°Р±РѕС‚С‡РёРє РЅР° С„СѓРЅРєС†РёСЋ success
+                console.log(data);
+                $("#company").html("");
+                $("#company").html(data["NAME"]);
+                $("#text").html("");
+                $("#text").html(data["DETAIL_TEXT"]);
+                $("#spec").html("");
+                $("#spec").html(data["offer"]);
+                $("#spec_images").html("");
+                for (var key in data["images"]) {
+                    if (key == 0)
+                        $("#spec_images").append("<div class='special-popup__img active'><img src=" + data["images"][key] + "></div>");
+                    else
+                        $("#spec_images").append("<div class='special-popup__img'><img src=" + data["images"][key] + "></div>");
+                }
+            }
+        });
+    });
+}
+
+$('.about form').submit(function(){
+	dataLayer.push({
+  		"event": "submitForm",
+  		"formName": "subscribe"
+	});
+});
+
+$('.reg form').submit(function(){
+	dataLayer.push({
+  		"event": "submitForm",
+  		"formName": "register"
+	});
+});
+
+$('.special-popup form').submit(function(){
+	dataLayer.push({
+  		"event": "submitForm",
+  		"formName": "special"
+	});
+});
