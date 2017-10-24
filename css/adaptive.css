@@ -2,6 +2,9 @@
   display: none;
 }
 @media (max-width: 1279px) {
+  .about__left video {
+    height: auto;
+  }
   .container {
     width: 960px;
   }
@@ -318,9 +321,14 @@
   .members .org {
     width: 100%;
   }
+  .partners-carousel {
+    display: block;
+  }
   .partners-carousel .item {
     width: calc(20vw - 4px);
     height: 15vw;
+    float: left;
+    margin: 2px;
   }
   .partners-carousel--members .item {
     width: calc(25vw - 4px);
@@ -808,8 +816,8 @@
     height: 23vw;
   }
   .partners-carousel--members .item {
-      width: calc(50vw - 4px);
-      height: 36vw;
+      width: calc(50vw - 4px) !important;
+      height: 36vw !important;
   }
   .themes-filters {
     display: block;
@@ -1076,7 +1084,7 @@
     flex-wrap: wrap;
   }
   .infoparnters-special__item {
-    width: 50%;
+    width: 50% !important;
     padding: 0 10px;
     margin-bottom: 10px;
   }
