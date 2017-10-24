@@ -930,6 +930,14 @@
   }
   .main__left {
     max-width: 100%;
+    width: 100%;
+  }
+  .member-top .container {
+    display: block !important;
+  }
+  .member-top .main__right {
+    padding: 0;
+    margin-top: 25px;
   }
   .main__left > * {
     clear: both;
@@ -940,6 +948,7 @@
   }
   .member-top .exhibition + img, .members-top .exhibition + img {
     margin-top: 30px;
+    max-width: 300px;
   }
   .member-info .container {
     display: block;
