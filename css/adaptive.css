@@ -1101,4 +1101,17 @@
   .about__million__text {
     font-size: 15px;
   }
+  .owl-carousel {
+    display: block !important;
+  }
+  .special .item {
+    margin: 20px auto;
+  }
+  .owl-lazy {
+    width: 100%;
+    height: auto;
+  }
+  .special-carousel--grid {
+    margin-top: 20px !important;
+  }
 }

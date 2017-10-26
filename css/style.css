@@ -14,6 +14,7 @@ body,html {
   margin: 0;
 	width: 100%;
 	overflow-x: hidden;
+	position: relative;
 }
 * {
   box-sizing: border-box;
@@ -172,7 +173,7 @@ section {
 /* HEADER */
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -1082,7 +1083,8 @@ section {
 }
 .events__item {
   width: 100%;
-  height: 130px;
+  min-height: 120px;
+	height: auto;
   background: rgba(255,255,255,.6);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
   margin-bottom: 10px;
@@ -1093,7 +1095,6 @@ section {
 }
 .events__info {
   width: 210px;
-  height: 100%;
   background: #63609D;
   padding: 20px;
 }
@@ -1269,6 +1270,14 @@ section {
   border-radius: 0;
   background: #67629F;
   opacity: .5;
+	margin: 5px;
+}
+.special-carousel--grid .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.special-carousel--grid {
+	margin-top: -40px !important;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #67629F;
