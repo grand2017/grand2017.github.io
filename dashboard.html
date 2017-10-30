@@ -109,13 +109,27 @@
 						<label for="reg-check2">Программа для дизайнера, архитектора</label>
 						<input type="checkbox" class="reg-check" id="reg-check3">
 						<label for="reg-check3">Программа для дилера, франчайзи</label>
-						<div class="dashboard-anchor dashboard-anchor--event"><i class="icon fa fa-fw fa-calendar"></i> Хочу посетить</div>
-						<div class="dashboard-anchor dashboard-anchor--meet"><i class="icon fa fa-fw fa-user"></i> Хочу встретиться</div>
+						<div class="dashboard-anchor dashboard-anchor--event" onclick='$("html, body").animate({scrollTop: $("#schedule").offset().top}, 1000);'><i class="icon fa fa-fw fa-calendar"></i> Хочу посетить</div>
+						<div class="dashboard-anchor dashboard-anchor--meet" onclick='$("html, body").animate({scrollTop: $(".members").offset().top}, 1000);'><i class="icon fa fa-fw fa-user"></i> Хочу встретиться</div>
 					</div>
 				</div>
 			</form>
     </div>
   </section>
+	<div class="ticket-popup">
+		<div class="ticket-popup__inner" id="print-content">
+			<div class="popup-close"></div>
+			<img src="img/ticket.png">
+			<div class="ticket-info">
+				<div class="ticket-info__number">Номер: <span>000001</span></div>
+				<div class="ticket-info__name">Имя: <span>Иван</span></div>
+				<div class="ticket-info__surname">Фамилия: <span>Иванов</span></div>
+			</div>
+			<div class="ticket-btns">
+				<a class="btn" id="print-btn" onClick="printTicket();">Распечатать / Cохранить</a>
+			</div>
+		</div>
+	</div>
 	<section class="schedule" id="schedule">
 		<div class="section-caption">
 			<div class="container">
@@ -124,8 +138,8 @@
 		</div>
 		<div class="container">
 			<div class="themes-filters">
-				<div class="themes-filters__item active" data-theme="customer">Программа для покупателей</div>
-				<div class="themes-filters__item" data-theme="dealer">Для дилеров/франчайзи</div>
+				<div class="themes-filters__item active" data-theme="tab6">Программа для покупателей</div>
+				<div class="themes-filters__item" data-theme="tab7">Для дилеров/франчайзи</div>
 				<div class="themes-filters__item" data-theme="designer">Для дизайнеров/архитекторов</div>
 			</div>
 			<div class="schedule-wrapper">
@@ -142,7 +156,7 @@
 				</div>
 				<div class="events">
 					<input type="checkbox" class="schedule-check" id="schedule-check1">
-					<label for="schedule-check1" class="events__item active" data-theme="customer" data-date="18">
+					<label for="schedule-check1" class="events__item active" data-theme="tab6" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
 							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
@@ -157,7 +171,7 @@
 						</div>
 					</label>
 					<input type="checkbox" class="schedule-check" id="schedule-check2">
-					<label for="schedule-check2" class="events__item active" data-theme="customer" data-date="18">
+					<label for="schedule-check2" class="events__item active" data-theme="tab6" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
 							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
@@ -172,7 +186,7 @@
 						</div>
 					</label>
 					<input type="checkbox" class="schedule-check" id="schedule-check3">
-					<label for="schedule-check3" class="events__item active" data-theme="customer" data-date="18">
+					<label for="schedule-check3" class="events__item active" data-theme="tab6" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
 							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
@@ -187,7 +201,7 @@
 						</div>
 					</label>
 					<input type="checkbox" class="schedule-check" id="schedule-check4">
-					<label for="schedule-check4" class="events__item active" data-theme="customer" data-date="18">
+					<label for="schedule-check4" class="events__item active" data-theme="tab6" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
 							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
@@ -202,7 +216,7 @@
 						</div>
 					</label>
 					<input type="checkbox" class="schedule-check" id="schedule-check5">
-					<label for="schedule-check5" class="events__item active" data-theme="customer" data-date="18">
+					<label for="schedule-check5" class="events__item active" data-theme="tab6" data-date="18">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
 							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
@@ -217,7 +231,7 @@
 						</div>
 					</label>
 					<input type="checkbox" class="schedule-check" id="schedule-check6">
-					<label for="schedule-check6" class="events__item" data-theme="dealer" data-date="18">
+					<label for="schedule-check6" class="events__item" data-theme="tab7" data-date="22">
 						<div class="events__info">
 							<div class="events__icon">10:00 - 12:00</div>
 							<div class="events__icon events__icon--location">Гранд-2 <br>Этаж 1</div>
