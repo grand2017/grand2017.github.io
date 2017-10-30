@@ -570,7 +570,14 @@
     width: 50%;
     margin: auto;
   }
-}
+  .ticket-popup__inner {
+    width: 768px;
+  }
+  .ticket-info {
+    top: 130px;
+    left: 365px;
+    font-size: 24px;
+  }
 @media (max-width: 767px) {
   .container {
     padding-left: 15px;
@@ -1113,5 +1120,14 @@
   }
   .special-carousel--grid {
     margin-top: 20px !important;
+  }
+  .ticket-popup__inner {
+    width: 320px;
+    padding: 70px 10px 20px;
+  }
+  .ticket-info {
+    top: 120px;
+    left: 150px;
+    font-size: 10px;
   }
 }
