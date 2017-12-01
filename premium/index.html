@@ -7,6 +7,8 @@
   <title>Премиум клуб Гранд</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
   <body class="index">
     <header class="header">
@@ -209,6 +211,24 @@
           </div>
           <div class="slider__slide slider__slide--2">
             <img src="img/slider/slide2/slide2.png">
+            <div class="slider__element slider__element--1">
+              <img src="img/slider/slide2/element1.jpg">
+              <div class="slider__element__caption">
+                Столик <span>столиус</span>
+              </div>
+            </div>
+            <div class="slider__element slider__element--2">
+              <img src="img/slider/slide2/element2.jpg">
+              <div class="slider__element__caption">
+                Диван <span>диваниус</span>
+              </div>
+            </div>
+            <div class="slider__element slider__element--3">
+              <img src="img/slider/slide2/element3.jpg">
+              <div class="slider__element__caption slider__element__caption--left">
+                Кресло <span>креслиус</span>
+              </div>
+            </div>
           </div>
           <div class="slider__slide slider__slide--3">
             <img src="img/slider/slide3/slide3.png">
@@ -245,9 +265,396 @@
         </div>
       </div>
     </section>
+    <div class="content">
+      <div class="container container--2col">
+        <div class="col col--content">
+          <section>
+            <div class="section-caption">
+              <div class="section-caption__heading">
+                <h2>События</h2>
+              </div>
+              <a href="#">Все события</a>
+            </div>
+            <div class="events">
+              <div class="events__left">
+                <div class="events__img">
+                  <img src="img/events/event1.png">
+                </div>
+                <div class="events__info">
+                  <div class="events__caption">
+                    Закрытая предновогодняя распродажа
+                  </div>
+                  <div class="events__counter" id="countdown1">
+                  </div>
+                </div>
+                <div class="events__overlay">
+                  <div class="events__btn">Хочу посетить</div>
+                  <div class="events__btn">Подробнее</div>
+                </div>
+              </div>
+              <div class="events__right">
+                <div class="events__img">
+                  <img src="img/events/event2.png">
+                </div>
+                <div class="events__info">
+                  <div class="events__caption">
+                    Выставка предметов интерьера
+                  </div>
+                  <div class="events__counter" id="countdown2">
+                  </div>
+                </div>
+                <div class="events__overlay">
+                  <div class="events__btn">Хочу посетить</div>
+                  <div class="events__btn">Подробнее</div>
+                </div>
+              </div>
+            </div>
+          </serction>
+          <section>
+            <div class="section-caption">
+              <div class="section-caption__heading">
+                <h2>Тренды</h2>
+              </div>
+              <a href="#">Все тренды</a>
+            </div>
+            <div class="trends">
+              <div class="trends__column">
+                <div class="trends__item">
+                  <div class="trends__carousel">
+                    <div class="item active">
+                      <img src="img/trends/trend1.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend1-2.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend1-3.png">
+                    </div>
+                  </div>
+                  <div class="trends__caption">
+                    Воспоминание о море
+                  </div>
+                </div>
+                <div class="trends__item">
+                  <div class="trends__carousel">
+                    <div class="item active">
+                      <img src="img/trends/trend4.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend4-2.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend4-3.png">
+                    </div>
+                  </div>
+                  <div class="trends__caption">
+                    Больше воздуха!
+                  </div>
+                </div>
+              </div>
+              <div class="trends__column">
+                <div class="trends__item">
+                  <div class="trends__carousel">
+                    <div class="item active">
+                      <img src="img/trends/trend2.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend2-2.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend2-3.png">
+                    </div>
+                  </div>
+                  <div class="trends__caption">
+                    Винный - цвет 2017
+                  </div>
+                </div>
+                <div class="trends__item">
+                  <div class="trends__carousel">
+                    <div class="item active">
+                      <img src="img/trends/trend5.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend5-2.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend5-3.png">
+                    </div>
+                  </div>
+                  <div class="trends__caption">
+                    50 оттенков серого
+                  </div>
+                </div>
+              </div>
+              <div class="trends__column">
+                <div class="trends__item active">
+                  <div class="trends__carousel">
+                    <div class="item active">
+                      <img src="img/trends/trend3.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend3-2.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend3-3.png">
+                    </div>
+                  </div>
+                  <div class="trends__caption">
+                    Ближе к природе
+                  </div>
+                </div>
+                <div class="trends__item">
+                  <div class="trends__carousel">
+                    <div class="item active">
+                      <img src="img/trends/trend6.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend6-2.png">
+                    </div>
+                    <div class="item">
+                      <img src="img/trends/trend6-3.png">
+                    </div>
+                  </div>
+                  <div class="trends__caption">
+                    Уроки геометрии
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="section-caption">
+              <div class="section-caption__heading">
+                <h2>Клуб дизайнеров</h2>
+              </div>
+              <a href="#">Подробнее</a>
+            </div>
+            <div class="designers">
+              <div class="designers__left">
+                <div class="designers__item">
+                  <img src="img/designs/design1.png">
+                  <div class="designers__grade">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="designers__right">
+                <div class="designers__item">
+                  <img src="img/designs/design2.png">
+                  <div class="designers__grade">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star.svg">
+                    <img src="img/icons/star.svg">
+                  </div>
+                </div>
+                <div class="designers__item">
+                  <img src="img/designs/design3.png">
+                  <div class="designers__grade">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                    <img src="img/icons/star--checked.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-caption">
+              <h3>ПРИМИ УЧАСТИЕ В КОНКУРСЕ ДИЗАЙНЕРОВ ИНТЕРЬЕРОВ ИЛИ ПРОГОЛОСУЙ ЗА ЛУЧШИЕ ДИЗАЙН-ПРОЕКТЫ КЛУБА ДИЗАЙНЕРОВ</h3>
+              <a href="#">Подробнее</a>
+            </div>
+          </section>
+          <section>
+            <div class="section-caption">
+              <div class="section-caption__heading">
+                <h1>Премиум клуб</h1>
+              </div>
+              <a href="#">О компании</a>
+            </div>
+            <p class="seotext">Сегодня мебельные магазины предлагают широкий ассортимент российской и импортной мебели, но если вы не хотите попусту терять время на посещение огромного количества мебельных магазинов, тогда добро пожаловать в салоны мебели Мебельного Торгового Комплекса "Гранд"!</p>
+            <p class="seotext">Мебельный Торговый Комплекс "Гранд" уже более 15 лет является самым крупным специализированным торговым комплексом Европы по продаже российской и импортной мебели и сопутствующих товаров. Здесь представлены салоны мебели более чем 800 зарубежных и отечественных компаний, ведущих фабрик мебели.</p>
+          </section>
+        </div>
+        <div class="col col--sidebar">
+          <div class="sidebar__add">
+            <img src="img/sidebar-add-placeholder1.png">
+          </div>
+          <div class="social">
+            <h2>Присоединяйтесь</h2>
+            <div class="social__icons">
+              <div class="social__icon">
+                <a href="#"><img src="img/icons/insta.svg"></a>
+              </div>
+              <div class="social__icon">
+                <a href="#"><img src="img/icons/fb.svg"></a>
+              </div>
+              <div class="social__icon">
+                <a href="#"><img src="img/icons/vk.svg"></a>
+              </div>
+              <div class="social__icon">
+                <a href="#"><img src="img/icons/twitter.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="subscription">
+            <h2>ПОДПИШИТЕСЬ И ПОЛУЧАЙТЕ НА EMAIL</h2>
+            <div class="subscription__panel">
+              <form>
+                <input type="checkbox" id="subscription-news" class="subscription__check" checked>
+                <label for="subscription-news">Новости</label>
+                <input type="checkbox" id="subscription-trends" class="subscription__check" checked>
+                <label for="subscription-trends">Тренды</label>
+                <input type="checkbox" id="subscription-events" class="subscription__check" checked>
+                <label for="subscription-events">События</label>
+                <input type="checkbox" id="subscription-sale" class="subscription__check" checked>
+                <label for="subscription-sale">Акции и скидки</label>
+                <input type="text" class="subscription__email" placeholder="Ваш E-mail">
+                <button class="subscription__btn">Подписаться</button>
+              </form>
+            </div>
+          </div>
+          <div class="sidebar__add">
+            <img src="img/sidebar-add-placeholder1.png">
+          </div>
+          <div class="sidebar__add">
+            <img src="img/sidebar-add-placeholder2.png">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <section>
+          <div class="section-caption">
+            <div class="section-caption__heading">
+              <h2>Новости</h2>
+            </div>
+            <a href="#">Все новости</a>
+          </div>
+          <div class="news">
+            <div class="news__item">
+              <img src="img/news/news1.png">
+              <div class="news__caption">
+                Стартовала выставка производителей мебели
+              </div>
+              <div class="news__overlay">
+                <div class="news__btn">
+                  Подробнее
+                </div>
+              </div>
+            </div>
+            <div class="news__item">
+              <img src="img/news/news2.png">
+              <div class="news__caption">
+                Фабио Новембре выступит в Гранде
+              </div>
+              <div class="news__overlay">
+                <div class="news__btn">
+                  Подробнее
+                </div>
+              </div>
+            </div>
+            <div class="news__item">
+              <img src="img/news/news3.png">
+              <div class="news__caption">
+                ВЕЧЕРНЯЯ МОСКВА: ВЫСТАВКА В ГРАНДЕ
+              </div>
+              <div class="news__overlay">
+                <div class="news__btn">
+                  Подробнее
+                </div>
+              </div>
+            </div>
+            <div class="news__item">
+              <img src="img/news/news4.png">
+              <div class="news__caption">
+                ДЕНЬ ДИЗАЙНЕРА И АРХИТЕКТОРА
+              </div>
+              <div class="news__overlay">
+                <div class="news__btn">
+                  Подробнее
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="section-caption">
+            <div class="section-caption__heading">
+              <h2>Партнеры клуба</h2>
+            </div>
+          </div>
+          <div class="partner-carousel owl-carousel owl-theme">
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+            <div class="partner-carousel__item item">
+              <img src="img/partners/partner1.png">
+            </div>
+          </div>
+          <p class="seotext">Сегодня мебельные магазины предлагают широкий ассортимент российской и импортной мебели, но если вы не хотите попусту терять время на посещение огромного количества мебельных магазинов, тогда добро пожаловать в салоны мебели Мебельного Торгового Комплекса "Гранд"!</p>
+          <p class="seotext">Мебельный Торговый Комплекс "Гранд" уже более 15 лет является самым крупным специализированным торговым комплексом Европы по продаже российской и импортной мебели и сопутствующих товаров. Здесь представлены салоны мебели более чем 800 зарубежных и отечественных компаний, ведущих фабрик мебели.</p>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <a href="#">О компании</a>
+          <a href="#">Категории мебели</a>
+          <a href="#">Бренды</a>
+          <a href="#">Клуб дизайнеров</a>
+          <a href="#">Тренды</a>
+          <a href="#">События</a>
+          <a href="#">Новости</a>
+          <a href="#">Контакты</a>
+        </nav>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            © 2007-2017 МТК "Гранд"
+          </div>
+          <div class="footer__address">
+            141400, Россия, Москва, Ленинградское шоссе, 100 метров от МКАД
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/tilt.jquery.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
   <script>
     $('#category-check').change(function(){
         if ($('#brand-check').prop('checked')==true){
@@ -285,7 +692,6 @@
         $('.brands__dropdown').toggleClass('active');
       }
     });
-
     $('.brands__bottom').click(function(){
       var top = parseInt($('.brands__items').css('top').replace('px',''))-124;
       var max = -124 * ($('.brands__item').length - 4);
@@ -352,10 +758,104 @@
     }, function(){
       sliderTimer=setInterval(nextslide,5000);
     });
-
     $('.light-switcher').click(function(){
       $('body').toggleClass('dark');
     });
+    $("#countdown1").countdown("2017/12/26", function(event) {
+      $(this).html(
+        event.strftime('<div>%D<span>дней</span></div><div>%H<span>часов</span></div><div>%M<span>минут</span></div><div>%S<span>секунд</span></div>')
+      );
+    });
+    $("#countdown2").countdown("2017/12/14", function(event) {
+      $(this).html(
+        event.strftime('<div>%D<span>дней</span></div><div>%H<span>часов</span></div><div>%M<span>минут</span></div><div>%S<span>секунд</span></div>')
+      );
+    });
+    $('.partner-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: false,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      responsive:{
+          1279:{
+              items:7,
+              slideBy: 7
+          }
+      }
+    });
+    setInterval(function(){
+      var column = Math.floor((Math.random()*3)+1);
+      var item = Math.floor((Math.random()*2)+1);
+      var slide = Math.floor((Math.random()*2)+1);
+      $('.trends__column:nth-of-type('+column+') .trends__item:nth-of-type('+item+') .item').removeClass('active');
+      $('.trends__column:nth-of-type('+column+') .trends__item:nth-of-type('+item+') .item:nth-of-type('+slide+')').addClass('active');
+    },1000);
+
+    /*
+    $('.trends__column:first-of-type .trends__item:first-of-type .owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots: false,
+      items:1,
+      autoplay:true,
+      autoplayTimeout:4000,
+      autoplayHoverPause:true
+    });
+    $('.trends__column:nth-of-type(2) .trends__item:first-of-type .owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots: false,
+      items:1,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true
+    });
+    $('.trends__column:last-of-type .trends__item:first-of-type .owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots: false,
+      items:1,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true
+    });
+    $('.trends__column:first-of-type .trends__item:last-of-type .owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots: false,
+      items:1,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true
+    });
+    $('.trends__column:nth-of-type(2) .trends__item:last-of-type .owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots: false,
+      items:1,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true
+    });
+    $('.trends__column:last-of-type .trends__item:last-of-type .owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots: false,
+      items:1,
+      autoplay:true,
+      autoplayTimeout:6000,
+      autoplayHoverPause:true
+    });
+    */
 
   </script>
 

@@ -26,6 +26,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   color: #28323C;
+  transition: .7s;
 }
 .dark {
   background: #28323C;
@@ -42,6 +43,72 @@ a {
   width: 1200px;
   max-width: 100%;
   margin: auto;
+}
+.container--2col {
+  display: flex;
+  justify-content: space-between;
+}
+.col--content {
+  width: 960px;
+  margin-bottom: 40px;
+}
+.col--sidebar {
+  width: 200px;
+}
+.section-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+.section-caption__heading {
+  padding: 0 50px;
+  position: relative;
+}
+.section-caption__heading::before {
+  content: '';
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-2px);
+  background: #CCAE7A;
+}
+.section-caption h2, .section-caption h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  background: #fff;
+  padding: 0 8px;
+  position: relative;
+  transition: .7s;
+}
+.dark .section-caption h2, .dark .section-caption h1 {
+  background: #28323C;
+  color: #fff;
+}
+.section-caption h3 {
+  color: #28323C;
+  max-width: 600px;
+  font-size: 18px;
+  font-family: "Land-Rover";
+  transition: .7s;
+}
+.dark .section-caption h3 {
+  color: #fff;
+}
+.section-caption a {
+  color: #CCAE7A;
+  font-size: 22px;
+  text-decoration: underline;
+  font-family: "Land-Rover";
+}
+.seotext {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.dark .seotext {
+  color: #fff;
 }
 
 /* HEADER */
@@ -63,6 +130,7 @@ a {
   display: block;
   background: url(../img/logo.png) no-repeat;
   background-size: contain;
+  transition: .7s;
 }
 .dark .header__logo {
   background: url(../img/logo--white.png) no-repeat;
@@ -187,8 +255,8 @@ a {
 	margin: 0;
 	padding-right: 0;
 	padding-left: 0;
-	-webkit-transition: color 0.4s;
-	transition: color 0.4s;
+	-webkit-transition: color 0.7s;
+	transition: color 0.7s;
 }
 .menu__item--current .menu__link,
 .menu__item--current .menu__link:hover,
@@ -289,6 +357,7 @@ a {
   position: relative;
   cursor: pointer;
   user-select: none;
+  transition: .7s;
 }
 .dark .header-check + label {
   color: #28323C;
@@ -456,6 +525,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  transition: .7s;
 }
 .dark .search .main-search input[type="submit"] {
   background: url(../img/icons/search-icon--white.svg) center no-repeat;
@@ -578,7 +648,6 @@ a {
 
 .homeslider {
   margin-top: 0;
-  padding-bottom: 100px;
 }
 .homeslider .container {
   display: flex;
@@ -656,6 +725,18 @@ a {
   top: 18.35%;
   left: 75.3%;
 }
+.slider__slide--2 .slider__element--1 {
+  top: 64%;
+  left: 8%;
+}
+.slider__slide--2 .slider__element--2 {
+  top: 50.2%;
+  left: 44.9%;
+}
+.slider__slide--2 .slider__element--3 {
+  top: 52.5%;
+  left: 82.6%;
+}
 .slider__element:hover {
   transform: translateZ(20px) scale(1.1);
   border: 3px solid #CCAE7A;
@@ -713,4 +794,440 @@ a {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* HOME EVENTS */
+
+.events {
+  display: flex;
+  justify-content: space-between;
+}
+.events__left, .events__right {
+  width: 660px;
+  position: relative;
+}
+.events__right {
+  width: 290px;
+}
+.events img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.events__info {
+  width: 100%;
+  max-width: 470px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.events__caption {
+  background: rgba(204,174,122,.7);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Land-Rover";
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.events__counter {
+  width: 215px;
+  margin: 15px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.events__counter > div {
+  width: 50px;
+  height: 50px;
+  background: rgba(40,50,60,.7);
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.events__counter > div span {
+  font-size: 9px;
+  display: block;
+}
+.events__overlay {
+  position: absolute;
+  background: rgba(204,174,122,.95);
+  width: 100%;
+  height: 41%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .7s;
+}
+.events > div:hover .events__overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.events__right .events__overlay {
+  flex-flow: column;
+}
+.events__btn {
+  background: rgba(40,50,60,.9);
+  color: #fff;
+  font-family: "Land-Rover";
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* HOME TRENDS */
+
+.trends {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.trends__column {
+  width: 310px;
+}
+.trends__item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.trends__carousel {
+  position: relative;
+  overflow: hidden;
+}
+.trends__carousel .item {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+}
+.trends__carousel .item.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+.trends__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.trends__caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #CCAE7A;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* HOME DESIGNERS */
+
+.designers {
+  display: flex;
+  justify-content: space-between;
+}
+.designers__left {
+  width: 660px;
+}
+.designers__right {
+  width: 290px;
+}
+.designers__right .designers__item:first-of-type {
+  margin-bottom: 20px;
+}
+.designers__item {
+  position: relative;
+}
+.designers__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.designers__grade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background: rgba(204,174,122,.8);
+}
+
+/* HOME NEWS */
+
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+.news__item {
+  width: 285px;
+  position: relative;
+}
+.news__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.news__caption {
+  padding: 15px;
+  background: #F0F2F2;
+  font-family: "Land-Rover";
+  font-size: 18px;
+  text-transform: uppercase;
+  border-top: 4px solid #CCAE7A;
+}
+.news__overlay {
+  position: absolute;
+  background: rgba(204,174,122,.8);
+  width: 100%;
+  height: 141px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .7s;
+}
+.news__item:hover .news__overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.news__btn {
+  background: rgba(40,50,60,.9);
+  color: #fff;
+  font-family: "Land-Rover";
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* HOME PARTNERS */
+
+.partner-carousel {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+.partner-carousel__item {
+  background: #F0F2F2;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner-carousel__item img {
+  width: 100%;
+  height: auto;
+}
+.partner-carousel .owl-nav {
+  position: absolute;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: -50px;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+.partner-carousel .owl-nav [class*=owl-] {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 40px;
+  height: 100%;
+  font-size: 0;
+  pointer-events: auto;
+  border-radius: 0;
+  opacity: .8;
+  transition: .5s;
+}
+.partner-carousel .owl-nav .owl-prev {
+  background: #CCAE7A url(../img/icons/chevron-left.svg) no-repeat center;
+}
+.partner-carousel .owl-nav .owl-next {
+  background: #CCAE7A url(../img/icons/chevron-right.svg) no-repeat center;
+}
+.partner-carousel .owl-nav .owl-prev:hover {
+  background: #CCAE7A url(../img/icons/chevron-left.svg) no-repeat center;
+  opacity: 1;
+}
+.partner-carousel .owl-nav .owl-next:hover {
+  background: #CCAE7A url(../img/icons/chevron-right.svg) no-repeat center;
+  opacity: 1;
+}
+
+/* SIDEBAR */
+
+.col--sidebar {
+  padding-top: 100px;
+}
+.col--sidebar > * {
+  margin-bottom: 20px;
+}
+.sidebar__add img {
+  width: 100%;
+  height: auto;
+}
+.col--sidebar h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.dark .col--sidebar h2 {
+  color: #fff;
+}
+.social {
+  padding-bottom: 15px;
+}
+.social__icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.social__icon {
+  width: 35%;
+  margin-bottom: 7px;
+  position: relative;
+}
+.social__icon img {
+  width: 100%;
+  display: block;
+  height: auto;
+  opacity: .8;
+  transition: .7s;
+}
+.social__icon img:hover {
+  opacity: 1;
+}
+.subscription {
+  padding-bottom: 10px;
+}
+.subscription__panel {
+  background: #F0F2F2;
+  padding: 20px 15px;
+}
+.subscription__check {
+  display: none;
+}
+.subscription__check + label {
+  padding-left: 22px;
+  position: relative;
+  color: #CCAE7A;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.subscription__check + label::before {
+  content: '';
+  width: 15px;
+  height: 16px;
+  top: 1px;
+  left: 0;
+  position: absolute;
+  background: url(../img/icons/sub-check.svg) no-repeat left bottom;
+}
+.subscription__check:checked + label::before {
+  background: url(../img/icons/sub-check--checked.svg) no-repeat left bottom;
+}
+.subscription__email {
+  display: block;
+  font-size: 16px;
+  background: #fff;
+  border: 2px solid #CCAE7A;
+  height: 40px;
+  margin-top: 15px;
+  width: 100%;
+  padding: 0 15px;
+}
+.subscription__btn {
+  margin: 0;
+  margin-top: 7px;
+  height: 40px;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  background: #CCAE7A;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 0;
+  width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 50px;
+}
+.footer__nav {
+  height: 60px;
+  background: #28323C;
+  padding: 0 35px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark .footer__nav {
+  background: #CCAE7A;
+}
+.footer__nav a {
+  color: #fff;
+  font-family: "Land-Rover";
+  text-transform: lowercase;
+  font-size: 18px;
+  padding: 15px;
+  transition: .5s;
+}
+.footer__nav a:hover {
+  color: #CCAE7A;
+}
+.dark .footer__nav a:hover {
+  color: #fff;
+}
+.footer__bottom {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom > div {
+  font-size: 16px;
+}
+.dark .footer__bottom {
+  color: #fff;
 }
