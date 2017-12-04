@@ -712,7 +712,7 @@
     });
     $('.categories__bottom').click(function(){
       var top = parseInt($('.categories__items').css('top').replace('px',''))-60;
-      var max = -60 * ($('.categories__item').length - 7);
+      var max = -60 * ($('.categories__item').length - 8);
       if (top>=max){
         $('.categories__items').css('top',top+'px');
       } else {
@@ -721,7 +721,7 @@
     });
     $('.categories__top').click(function(){
       var top = parseInt($('.categories__items').css('top').replace('px',''))+60;
-      var max = -60 * ($('.categories__item').length - 7);
+      var max = -60 * ($('.categories__item').length - 8);
       if (top<=0){
         $('.categories__items').css('top',top+'px');
       } else {
@@ -793,69 +793,6 @@
       $('.trends__column:nth-of-type('+column+') .trends__item:nth-of-type('+item+') .item').removeClass('active');
       $('.trends__column:nth-of-type('+column+') .trends__item:nth-of-type('+item+') .item:nth-of-type('+slide+')').addClass('active');
     },1000);
-
-    /*
-    $('.trends__column:first-of-type .trends__item:first-of-type .owl-carousel').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:false,
-      dots: false,
-      items:1,
-      autoplay:true,
-      autoplayTimeout:4000,
-      autoplayHoverPause:true
-    });
-    $('.trends__column:nth-of-type(2) .trends__item:first-of-type .owl-carousel').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:false,
-      dots: false,
-      items:1,
-      autoplay:true,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true
-    });
-    $('.trends__column:last-of-type .trends__item:first-of-type .owl-carousel').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:false,
-      dots: false,
-      items:1,
-      autoplay:true,
-      autoplayTimeout:3000,
-      autoplayHoverPause:true
-    });
-    $('.trends__column:first-of-type .trends__item:last-of-type .owl-carousel').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:false,
-      dots: false,
-      items:1,
-      autoplay:true,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true
-    });
-    $('.trends__column:nth-of-type(2) .trends__item:last-of-type .owl-carousel').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:false,
-      dots: false,
-      items:1,
-      autoplay:true,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true
-    });
-    $('.trends__column:last-of-type .trends__item:last-of-type .owl-carousel').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:false,
-      dots: false,
-      items:1,
-      autoplay:true,
-      autoplayTimeout:6000,
-      autoplayHoverPause:true
-    });
-    */
 
   </script>
 
